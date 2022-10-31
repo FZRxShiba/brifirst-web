@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import CustomNavbar from "../../components/CustomNavbar/CustomNavbar";
 
 const Homepage = () => {
   return (
-    <div>Homepage</div>
-  )
-}
+    <div>
+      <CustomNavbar />
+    </div>
+  );
+};
 
-export default Homepage
+export default Homepage;
