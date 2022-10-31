@@ -3,7 +3,7 @@ import CustomNavbar from "../../components/CustomNavbar/CustomNavbar";
 
 const Homepage = () => {
   return (
-    <div>
+    <div style={{"backgroundColor":"black"}}>
       <CustomNavbar />
     </div>
   );

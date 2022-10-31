@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./Logo.svg";
+import "./CustomNavbar.css"
 
 const CustomNavbar = () => {
   return (
@@ -20,10 +21,10 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#news">News</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav.Link  href="#home"><div className="NoBold">Home</div></Nav.Link>
+            <Nav.Link  href="#about"><div className="NoBold">About</div></Nav.Link>
+            <Nav.Link  href="#news"><div className="NoBold">News</div></Nav.Link>
+            <Nav.Link  href="#contact"><div className="NoBold">Contact</div></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
