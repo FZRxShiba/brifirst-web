@@ -1,11 +1,14 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "./Logo.svg";
+import Logo from "./bumn.svg";
+import Logobri from "./bri.svg";
 import "./CustomNavbar.css"
+
 
 const CustomNavbar = () => {
   return (
+    
     <Navbar
       collapseOnSelect
       expand="lg"
@@ -25,6 +28,7 @@ const CustomNavbar = () => {
             <Nav.Link  href="#about"><div className="NoBold">About</div></Nav.Link>
             <Nav.Link  href="#news"><div className="NoBold">News</div></Nav.Link>
             <Nav.Link  href="#contact"><div className="NoBold">Contact</div></Nav.Link>
+            <img src={Logobri} width="100" height="80" alt="Logo BRIFIRST" />
           </Nav>
         </Navbar.Collapse>
       </Container>
