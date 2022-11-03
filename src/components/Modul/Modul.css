@@ -4,6 +4,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .modul-element {
@@ -40,4 +42,26 @@
 .owl-item {
   display: flex;
   justify-content: center;
+}
+
+.owl-dots{
+  margin-top: 30px!important;
+}
+
+.owl-dot{
+  zoom: 1.4!important;
+}
+
+.modul-modal-img{
+  margin-top: -20px;
+  margin-bottom: -20px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.modal-body{
+  text-align: center;
 }

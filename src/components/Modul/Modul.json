@@ -1,0 +1,37 @@
+[
+    {
+        "pk": 0,
+        "title": "Fixed Asset Management & PSAK 73",
+        "image": "./fam.png"
+    },
+    {
+        "pk": 1,
+        "title": "Income & Expense Management",
+        "image": "./iem.png"
+    },
+    {
+        "pk": 2,
+        "title": "Financial Consolidation",
+        "image": "./fc.png"
+    },
+    {
+        "pk": 3,
+        "title": "Planning & Budgeting",
+        "image": "./pb.png"
+    },
+    {
+        "pk": 4,
+        "title": "Enterprise General Ledger",
+        "image": "./egl.png"
+    },
+    {
+        "pk": 5,
+        "title": "Financial Product Subledger",
+        "image": "./fps.png"
+    },
+    {
+        "pk": 6,
+        "title": "Profitability Analysis and Performance Management",
+        "image": "./papm.png"
+    }
+]
