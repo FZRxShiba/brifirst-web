@@ -4,9 +4,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./bumn.svg";
 import Logobri from "./bri.svg";
 import "./CustomNavbar.css"
+import {useState} from 'react';
 
 
-const CustomNavbar = () => {
+
+const CustomNavbar = () => { 
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovering(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovering(false);
+  };
   return (
     
     <Navbar
@@ -24,7 +35,13 @@ const CustomNavbar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link  href="#home"><div className="NoBold">Home</div></Nav.Link>
+            
+            <Nav.Link  href="#about"><div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="NoBold">Home</div></Nav.Link>
+            {isHovering && (
+          <div>
+            <h2>Only visible when hovering div</h2>
+          </div>
+        )}
             <Nav.Link  href="#about"><div className="NoBold">About</div></Nav.Link>
             <Nav.Link  href="#news"><div className="NoBold">News</div></Nav.Link>
             <Nav.Link  href="#contact"><div className="NoBold">Contact</div></Nav.Link>
