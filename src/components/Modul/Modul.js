@@ -24,6 +24,7 @@ const Modul = () => {
 
   return (
     <div className="modul-container">
+      <div className="modul-container-title">7 Modul Utama</div>
       <div class="container-fluid">
         <OwlCarousel
           items={3}
@@ -46,7 +47,11 @@ const Modul = () => {
       <Modal show={show} onHide={handleClose}>
         <Modal.Body className="modal-body">
           <h4>{dataModul[id].title}</h4>
-          <img className="modul-modal-img" src={require("" + dataModul[id].image + "")} />
+          <img
+            className="modul-modal-img"
+            src={require("" + dataModul[id].image + "")}
+          />
+          <p>{dataModul[id].detail}</p>
         </Modal.Body>
       </Modal>
     </div>
