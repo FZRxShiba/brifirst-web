@@ -51,7 +51,25 @@ const Modul = () => {
             className="modul-modal-img"
             src={require("" + dataModul[id].image + "")}
           />
-          <p>{dataModul[id].detail}</p>
+          <div dangerouslySetInnerHTML={{ __html: dataModul[id].detail }} />
+          <div className="benefit-container">
+            <b>Benefit:</b>
+            <ul>
+              {dataModul[id].benefit.map((item) => (
+                <li>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="benefit-container">
+            <b>Uker:</b>
+            <p>{dataModul[id].uker}</p>
+          </div>
+          {dataModul[id].jumlah != "-" && (
+            <div className="benefit-container">
+              <b>Jumlah:</b>
+              <p>{dataModul[id].jumlah}</p>
+            </div>
+          )}
         </Modal.Body>
       </Modal>
     </div>
