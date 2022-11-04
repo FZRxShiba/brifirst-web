@@ -1,25 +1,12 @@
-import React from "react";
+import { React, useState } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Logo from "./bumn.svg";
 import Logobri from "./bri.svg";
-import "./CustomNavbar.css"
-import {useState} from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./CustomNavbar.css";
 
-
-
-const CustomNavbar = () => { 
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleMouseOver = () => {
-    setIsHovering(true);
-  };
-
-  const handleMouseOut = () => {
-    setIsHovering(false);
-  };
+const CustomNavbar = () => {
   return (
-    
     <Navbar
       collapseOnSelect
       expand="lg"
@@ -29,23 +16,39 @@ const CustomNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <img src={Logo} width="200" height="50" alt="Logo BRIFIRST" />
+          <img src={Logo} width="200" height="30" alt="Logo BUMN" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            
-            <Nav.Link  href="#about"><div onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} className="NoBold">Home</div></Nav.Link>
-            {isHovering && (
-          <div>
-            <h2>Only visible when hovering div</h2>
-          </div>
-        )}
-            <Nav.Link  href="#about"><div className="NoBold">About</div></Nav.Link>
-            <Nav.Link  href="#news"><div className="NoBold">News</div></Nav.Link>
-            <Nav.Link  href="#contact"><div className="NoBold">Contact</div></Nav.Link>
-            <img src={Logobri} width="100" height="80" alt="Logo BRIFIRST" />
+            <Nav.Link href="#about">
+              <div className="NoBold">
+                <div className="menu">Home</div>
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#about">
+              <div className="NoBold">
+                <div className="menu">About</div>
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#news">
+              <div className="NoBold">
+                <div className="menu">News</div>
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#contact">
+              <div className="NoBold">
+                <div className="menu">Contact</div>
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#contact">
+              <div className="logo-container">
+                <div className="menu">
+                  <img src={Logobri} width="90" height="30" alt="Logo" />
+                </div>
+              </div>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
