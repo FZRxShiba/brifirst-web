@@ -1,4 +1,7 @@
 import React from "react";
+import LogoSAP from "./SAP.svg";
+import LogoDeloitte from "./deloitte.png";
+
 import {
   MDBFooter,
   MDBContainer,
@@ -74,6 +77,9 @@ export default function App() {
               style={{ color: "#18B1E0" }}
             >
               <h6 className="text-uppercase fw-bold mb-4">PARTNER</h6>
+              <p><img src={LogoDeloitte} width="130" height="30" alt="Logo Deloitte" /></p>
+              <p><img src={LogoSAP} width="100" height="50" alt="Logo SAP" /></p>
+
             </MDBCol>
           </MDBRow>
         </MDBContainer>
