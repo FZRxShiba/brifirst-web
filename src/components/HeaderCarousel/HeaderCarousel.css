@@ -1,0 +1,10 @@
+.Header{
+    padding-bottom: 450px;
+    text-align: left;
+    margin-left: -120px;
+};
+
+.header-title{
+    font-size: 100px ;
+    font-weight: bold;
+}
