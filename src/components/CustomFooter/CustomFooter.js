@@ -41,7 +41,7 @@ export default function App() {
                 className="text-uppercase fw-bold mb-4"
                 style={{ color: "#18B1E0" }}
               >
-                <MDBIcon icon="gem" className="me-3" />
+                
                 BRI Kantor Pusat
               </h6>
               <p>PT Bank Rakyat Indonesia (Persero) Tbk.</p>
@@ -58,11 +58,11 @@ export default function App() {
             >
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon icon="home" className="me-2" />
+
                 📞 14017 / 1500017
               </p>
               <p>
-                <MDBIcon icon="envelope" className="me-3" />✉ callbri@bri.co.id
+                ✉ callbri@bri.co.id
               </p>
             </MDBCol>
 
