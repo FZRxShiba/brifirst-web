@@ -1,0 +1,82 @@
+.modul-container-title{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 40px;
+}
+
+.modul-container {
+  background: url("./bgmodul.svg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.modul-element {
+  background-color: #0a60a7;
+  color: white;
+  min-height: 22rem;
+  max-width: 12rem;
+  border-top-left-radius: 10rem;
+  border-top-right-radius: 10rem;
+  text-align: center;
+}
+
+.modul-title {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+}
+
+.modul-button {
+  position: fixed;
+  left: 50%;
+  bottom: -10px;
+  transform: translate(-50%, -50%);
+}
+
+.modul-button:hover {
+  transform: translate(-50%, -40%);
+  transition: all 0.4s ease;
+}
+
+.owl-item {
+  display: flex;
+  justify-content: center;
+}
+
+.owl-dots{
+  margin-top: 30px!important;
+}
+
+.owl-dot{
+  zoom: 1.4!important;
+}
+
+.modul-modal-img{
+  margin-top: -20px;
+  margin-bottom: -20px;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.modal-body{
+  text-align: center;
+  padding: 30px;
+}
+
+.benefit-container{
+  text-align: left!important;
+  margin-top: 20px;
+}

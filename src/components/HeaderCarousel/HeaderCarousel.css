@@ -1,10 +1,5 @@
 .Header{
-    padding-bottom: 450px;
+    padding-bottom: 300px;
     text-align: left;
-    margin-left: -120px;
+    margin-left: -150px;
 };
-
-.header-title{
-    font-size: 100px ;
-    font-weight: bold;
-}

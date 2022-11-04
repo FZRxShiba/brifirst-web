@@ -22,13 +22,22 @@ const HeaderCarousel = () => {
             <Row>
               <Col>
                 <div className="Header">
-                  <Row >
-                    <div className="header-title">Apa itu BRIFirst?</div>
-                    <p> Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a</p>
-                  
+                  <Row>
+                    <div
+                      style={{
+                        fontSize: "60px",
+                        fontWeight: "bolder",
+                        color: "#034584",
+                      }}
+                    >
+                      Apa itu BRIFirst?
+                    </div>
+                    <h6>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a
+                    </h6>
                   </Row>
                 </div>
               </Col>

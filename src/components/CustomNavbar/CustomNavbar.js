@@ -1,8 +1,10 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { React, useState } from "react";
+import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
+import Logo from "./bumn.svg";
+import Logobri from "./bri.svg";
+import Logobrifirst from "./Logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Logo from "./Logo.svg";
-import "./CustomNavbar.css"
+import "./CustomNavbar.css";
 
 const CustomNavbar = () => {
   return (
@@ -15,16 +17,80 @@ const CustomNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <img src={Logo} width="200" height="50" alt="Logo BRIFIRST" />
+          <img src={Logo} width="200" height="30" alt="Logo BUMN" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link  href="#home"><div className="NoBold">Home</div></Nav.Link>
-            <Nav.Link  href="#about"><div className="NoBold">About</div></Nav.Link>
-            <Nav.Link  href="#news"><div className="NoBold">News</div></Nav.Link>
-            <Nav.Link  href="#contact"><div className="NoBold">Contact</div></Nav.Link>
+            <Nav.Link href="#home">
+              <li class="nav-item dropdown ktm-mega-menu">
+                <div className="NoBold">
+                  <div className="menu">Home</div>
+                </div>
+                <div class="dropdown-menu mega-menu p-3" style={{borderColor: "white"}}>
+                  <Row>
+                    <Col>
+                      <img
+                        src={Logobrifirst}
+                        width="200"
+                        height="30"
+                        alt="Logo BRIFirst"
+                      />
+                    </Col>
+                    <Col>
+                      <a
+                        class="dropdown-item"
+                        href="#project"
+                        className="tulisan"
+                      >
+                        Project
+                      </a>
+                    </Col>
+                    <Col>
+                      <a
+                        class="dropdown-item"
+                        href="#modul"
+                        className="tulisan"
+                      >
+                        Modul
+                      </a>
+                    </Col>
+                    <Col>
+                      <a
+                        class="dropdown-item"
+                        href="#struktur-organisasi"
+                        className="tulisan"
+                      >
+                        Struktur Organisasi
+                      </a>
+                    </Col>
+                  </Row>
+                </div>
+              </li>
+            </Nav.Link>
+            <Nav.Link href="#about">
+              <div className="NoBold">
+                <div className="menu">About</div>
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#news">
+              <div className="NoBold">
+                <div className="menu">News</div>
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#contact">
+              <div className="NoBold">
+                <div className="menu">Contact</div>
+              </div>
+            </Nav.Link>
+            <Nav.Link href="#contact">
+              <div className="logo-container">
+                <div className="menu">
+                  <img src={Logobri} width="90" height="30" alt="Logo" />
+                </div>
+              </div>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
