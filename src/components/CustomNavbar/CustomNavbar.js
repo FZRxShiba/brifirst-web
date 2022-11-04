@@ -1,12 +1,10 @@
 import { React, useState } from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
 import Logo from "./bumn.svg";
 import Logobri from "./bri.svg";
-import Logobrifirst from "./Logo.svg"
+import Logobrifirst from "./Logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CustomNavbar.css";
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 const CustomNavbar = () => {
   return (
@@ -26,19 +24,50 @@ const CustomNavbar = () => {
           <Nav className="me-auto"></Nav>
           <Nav>
             <Nav.Link href="#home">
-            <li class="nav-item dropdown ktm-mega-menu">
-                  <a class="nav-link" href="#" style={{ textDecoration: 'none' }} data-bs-toggle="dropdown" className="NoBold"> Home </a>
-                  <div class="dropdown-menu mega-menu p-3">
-                  
-      <Row>
-        <Col><img src={Logobrifirst} width="200" height="30" alt="Logo BRIFirst" /></Col>
-        <Col><a class="dropdown-item" href="#" style={{ textDecoration: 'none' }} className="tulisan">Project</a></Col>
-        <Col><a class="dropdown-item" href="#" style={{ textDecoration: 'none' }} className="tulisan">Modul</a></Col>
-        <Col><a class="dropdown-item" href="#" style={{ textDecoration: 'none' }}  className="tulisan">Struktur Organisasi</a></Col>
-      </Row>
-    
-                  </div>
-               </li>
+              <li class="nav-item dropdown ktm-mega-menu">
+                <div className="NoBold">
+                  <div className="menu">Home</div>
+                </div>
+                <div class="dropdown-menu mega-menu p-3" style={{borderColor: "white"}}>
+                  <Row>
+                    <Col>
+                      <img
+                        src={Logobrifirst}
+                        width="200"
+                        height="30"
+                        alt="Logo BRIFirst"
+                      />
+                    </Col>
+                    <Col>
+                      <a
+                        class="dropdown-item"
+                        href="#project"
+                        className="tulisan"
+                      >
+                        Project
+                      </a>
+                    </Col>
+                    <Col>
+                      <a
+                        class="dropdown-item"
+                        href="#modul"
+                        className="tulisan"
+                      >
+                        Modul
+                      </a>
+                    </Col>
+                    <Col>
+                      <a
+                        class="dropdown-item"
+                        href="#struktur-organisasi"
+                        className="tulisan"
+                      >
+                        Struktur Organisasi
+                      </a>
+                    </Col>
+                  </Row>
+                </div>
+              </li>
             </Nav.Link>
             <Nav.Link href="#about">
               <div className="NoBold">
