@@ -1,0 +1,17 @@
+.footer {
+    background-image: linear-gradient(to right, rgba(110, 69, 225, 1), rgba(137, 212, 207, 1));
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .footBold {
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .telp {
+    font-size: 15px;
+    color: #030101;
+  }
+  

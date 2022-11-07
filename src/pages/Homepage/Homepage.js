@@ -7,7 +7,7 @@ import NewsCarousel from "../../components/NewsCarousel/NewsCarousel"
 
 const Homepage = () => {
   return (
-    <div style={{"backgroundColor":"#18B1E0"}}>
+    <div >
       <CustomNavbar />
       <HeaderCarousel />
       <Modul />
