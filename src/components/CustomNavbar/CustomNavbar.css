@@ -2,8 +2,8 @@ a {
   text-decoration: none;
 }
 
-a:hover{
-	color: #034584!important;
+a:hover {
+  color: #034584 !important;
 }
 
 .logo-container {
@@ -13,8 +13,9 @@ a:hover{
 .NoBold {
   font-size: 20px;
   padding: 5px 10px 0px 10px;
-  color: #ffffff;
+  color: #030101;
 }
+
 
 .tulisan {
   font-size: 20px;
@@ -26,7 +27,7 @@ a:hover{
   padding: 1px 2px 6px 2px;
 }
 
-.NoBold:hover {
+//.NoBold:hover {
   background-color: #034584;
   border-radius: 20px;
 }
@@ -44,7 +45,7 @@ a:hover{
     position: static;
   }
   .mega-menu {
-    top: 60px;
+    top: 58px;
     left: 0;
     right: 0;
     width: 100%;
@@ -61,4 +62,34 @@ a:hover{
   .dropdown:hover > .dropdown-menu {
     display: block;
   }
+}
+
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #090d0f;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.active{
+  color: #0087ca !important;
 }

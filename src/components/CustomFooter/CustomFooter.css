@@ -1,0 +1,33 @@
+.footer {
+  background: linear-gradient(90deg, #8FE1FF 10.98%, #3E5EB3 100%);
+}
+
+.footBold {
+  font-size: 15px;
+  color: #fff;
+}
+
+.telp {
+  font-size: 15px;
+  color: #030101;
+}
+
+.dotremove ul {
+  list-style-type: none;
+}
+
+.dotremovecol ul {
+  list-style-type: none;
+}
+
+.dotremove {
+margin-left: -8px;
+}
+
+.marjan {
+margin-left: -37px;
+}
+
+.footermargin {
+  margin-left: 355px;
+}

@@ -1,8 +1,7 @@
 import { React, useState } from "react";
 import { Container, Nav, Navbar, Row, Col } from "react-bootstrap";
-import Logo from "./bumn.svg";
+import Logo from "./Logo.svg";
 import Logobri from "./bri.svg";
-import Logobrifirst from "./Logo.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CustomNavbar.css";
 
@@ -26,61 +25,22 @@ const CustomNavbar = () => {
             <Nav.Link href="#home">
               <li class="nav-item dropdown ktm-mega-menu">
                 <div className="NoBold">
-                  <div className="menu">Home</div>
-                </div>
-                <div class="dropdown-menu mega-menu p-3" style={{borderColor: "white"}}>
-                  <Row>
-                    <Col>
-                      <img
-                        src={Logobrifirst}
-                        width="200"
-                        height="30"
-                        alt="Logo BRIFirst"
-                      />
-                    </Col>
-                    <Col>
-                      <a
-                        class="dropdown-item"
-                        href="#project"
-                        className="tulisan"
-                      >
-                        Project
-                      </a>
-                    </Col>
-                    <Col>
-                      <a
-                        class="dropdown-item"
-                        href="#modul"
-                        className="tulisan"
-                      >
-                        Modul
-                      </a>
-                    </Col>
-                    <Col>
-                      <a
-                        class="dropdown-item"
-                        href="#struktur-organisasi"
-                        className="tulisan"
-                      >
-                        Struktur Organisasi
-                      </a>
-                    </Col>
-                  </Row>
-                </div>
+                  <div className="hover-underline-animation menu">Home</div>
+                  </div>
               </li>
             </Nav.Link>
             <Nav.Link href="#about">
-              <div className="NoBold">
+              <div className="hover-underline-animation NoBold">
                 <div className="menu">About</div>
               </div>
             </Nav.Link>
             <Nav.Link href="#news">
               <div className="NoBold">
-                <div className="menu">News</div>
+                <div className="hover-underline-animation menu">News</div>
               </div>
             </Nav.Link>
             <Nav.Link href="#contact">
-              <div className="NoBold">
+              <div className="hover-underline-animation NoBold">
                 <div className="menu">Contact</div>
               </div>
             </Nav.Link>
