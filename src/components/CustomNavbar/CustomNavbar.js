@@ -4,6 +4,7 @@ import Logo from "./Logo.svg";
 import Logobri from "./bri.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CustomNavbar.css";
+import { Link } from "react-router-dom";
 
 const CustomNavbar = () => {
   return (
@@ -16,17 +17,19 @@ const CustomNavbar = () => {
     >
       <Container>
         <Navbar.Brand href="#home">
-          <img src={Logo} width="200" height="30" alt="Logo BUMN" />
+          <Link to="/">
+            <img src={Logo} width="200" height="30" alt="Logo BUMN" />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link href="#home">
+            <Nav.Link href="/">
               <li class="nav-item dropdown ktm-mega-menu">
                 <div className="NoBold">
                   <div className="hover-underline-animation menu">Home</div>
-                  </div>
+                </div>
               </li>
             </Nav.Link>
             <Nav.Link href="#about">

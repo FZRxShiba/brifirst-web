@@ -5,7 +5,7 @@ import HeaderCarousel from "../../components/HeaderCarousel/HeaderCarousel"
 
 const Homepage = () => {
   return (
-    <div>
+    <div style={{ background: "linear-gradient(90.1deg, #d0e4ff 10.98%, #ffffff 99.93%)"}}>
       <HeaderCarousel />
       <CardMenu />
       <BenefitSection />
