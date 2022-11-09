@@ -1,18 +1,14 @@
 import React from "react";
-import CustomNavbar from "../../components/CustomNavbar/CustomNavbar";
-import CustomFooter from "../../components/CustomFooter/CustomFooter"
-import Modul from "../../components/Modul/Modul"
+import CardMenu from "../../components/CardMenu/CardMenu";
+import BenefitSection from "../../components/BenefitSection/BenefitSection";
 import HeaderCarousel from "../../components/HeaderCarousel/HeaderCarousel"
-import NewsCarousel from "../../components/NewsCarousel/NewsCarousel"
 
 const Homepage = () => {
   return (
-    <div >
-      <CustomNavbar />
+    <div>
       <HeaderCarousel />
-      <Modul />
-      <NewsCarousel />
-      <CustomFooter />
+      <CardMenu />
+      <BenefitSection />
     </div>
   );
 };

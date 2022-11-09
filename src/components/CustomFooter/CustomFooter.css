@@ -18,15 +18,13 @@
 
 .dotremovecol ul {
   list-style-type: none;
+  margin-left: -50px;
 }
 
 .dotremove {
 margin-left: -8px;
 }
 
-.marjan {
-margin-left: -37px;
-}
 
 .footermargin {
   margin-left: 355px;
