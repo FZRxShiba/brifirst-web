@@ -1,3 +1,8 @@
 .news-container{
     margin-bottom: 200px;
 }
+
+.backgroundnews {
+    background: linear-gradient(90deg, #d9f4ff 10.98%, #bec9e7 100%);
+  }
+  
