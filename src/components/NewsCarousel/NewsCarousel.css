@@ -2,13 +2,7 @@
     margin-bottom: 200px;
 }
 
-.modul-container {
-    background: url("./bgmodul.svg");
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 40px;
-    padding-bottom: 30px;
+.backgroundnews {
+    background: linear-gradient(90deg, #d9f4ff 10.98%, #bec9e7 100%);
   }
   

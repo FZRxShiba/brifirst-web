@@ -1,7 +1,7 @@
 import React from "react";
 import LogoSAP from "./SAP.svg";
 import LogoDeloitte from "./deloitte.png";
-import { FiMapPin } from "react-icons/fi";
+import { FiMapPin,FiMail } from "react-icons/fi";
 import { BsTelephoneFill, BsTelephone } from "react-icons/bs";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
@@ -55,6 +55,11 @@ export default function App() {
                   </ul></div>
                 </Col>
               </Row></div>
+
+              <p>
+                <FiMail size={20} />
+                &nbsp;hotline_brifirst@bri.co.id
+              </p>
 
               <p>
                 <AiOutlineInstagram size={20} />
