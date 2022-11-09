@@ -1,62 +1,74 @@
-import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
-import img1 from "./gbrnews.png";
-import img2 from "./news.png";
-import "./NewsCarousel.css";
+import React from 'react'
+import Carousel from 'react-grid-carousel'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+import {
+  MDBCard,
+  MDBCardBody,
+  MDBCardText,
+  MDBCardImage
+} from 'mdb-react-ui-kit';
+
+
 
 const NewsCarousel = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
   };
   return (
-    <div className="backgroundnews"><Carousel activeIndex={index} onSelect={handleSelect}>
+    <Row>
+      <Col sm={9}></Col>
+      <Col sm={3}>    <Carousel cols={1} rows={1} gap={10} loop>
     <Carousel.Item>
-      <img className="d-block w-100" src={img1} alt="First slide" />
-      <Carousel.Caption>
-        <Container>
-          <Row>
-            <Col></Col>
-            <Col className="news-container">
-              <img
-                className="d-block w-100"
-                src={img2}
-                width="800"
-                height="250"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Carousel.Caption>
+    <MDBCard>
+      <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/182.webp' alt='...' position='top' />
+      <MDBCardBody>
+        <MDBCardText>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </MDBCardText>
+      </MDBCardBody>
+    </MDBCard>
     </Carousel.Item>
-
     <Carousel.Item>
-      <img className="d-block w-100" src={img1} alt="First slide" />
-      <Carousel.Caption>
-        <Container>
-          <Row>
-            <Col></Col>
-            <Col className="news-container">
-              <img
-                className="d-block w-100"
-                src={img2}
-                width="800"
-                height="250"
-              />
-            </Col>
-          </Row>
-        </Container>
-      </Carousel.Caption>
+    <MDBCard>
+      <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/182.webp' alt='...' position='top' />
+      <MDBCardBody>
+        <MDBCardText>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </MDBCardText>
+      </MDBCardBody>
+    </MDBCard>
     </Carousel.Item>
-  </Carousel></div>
-    
+    <Carousel.Item>
+    <MDBCard>
+      <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/182.webp' alt='...' position='top' />
+      <MDBCardBody>
+        <MDBCardText>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </MDBCardText>
+      </MDBCardBody>
+    </MDBCard>
+    </Carousel.Item>
+    <Carousel.Item>
+    <MDBCard>
+      <MDBCardImage src='https://mdbootstrap.com/img/new/standard/nature/182.webp' alt='...' position='top' />
+      <MDBCardBody>
+        <MDBCardText>
+          Some quick example text to build on the card title and make up the bulk of the card's content.
+        </MDBCardText>
+      </MDBCardBody>
+    </MDBCard>
+    </Carousel.Item>
+    {/* ... */}
+  </Carousel></Col>
+    </Row>
 
-
-
-  );
-};
-
-export default NewsCarousel;
+)
+}
+export default NewsCarousel
