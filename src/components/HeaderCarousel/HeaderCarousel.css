@@ -1,5 +1,35 @@
-.Header{
-    padding-bottom: 300px;
-    text-align: left;
-    margin-left: -150px;
-};
+.modul-container {
+    background: url("./town.svg");
+    height: 650px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.contentImg{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentH{
+    color: white;
+    text-shadow: 2px 2px 4px rgb(70, 70, 70);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -160px;
+}
+
+.contentBtn{
+    margin-top: 70px;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

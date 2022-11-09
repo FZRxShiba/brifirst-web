@@ -10,9 +10,9 @@ const Homepage = () => {
     <div style={{"backgroundColor":"#18B1E0"}}>
       <CustomNavbar />
       <HeaderCarousel />
-      <Modul />
+      {/* <Modul />
       <NewsCarousel />
-      <CustomFooter />
+      <CustomFooter /> */}
     </div>
   );
 };
