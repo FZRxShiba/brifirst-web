@@ -25,42 +25,8 @@ const CustomNavbar = () => {
             <Nav.Link href="#home">
               <li class="nav-item dropdown ktm-mega-menu">
                 <div className="NoBold">
-                  <div className="active hover-underline-animation menu">Home</div>
-                </div>
-                <div class="dropdown-menu mega-menu p-3" style={{borderColor: "white"}}>
-                  <Row>
-                    <Col>
-
-                    </Col>
-                    <Col>
-                      <a
-                        class="dropdown-item"
-                        href="#project"
-                        className="tulisan"
-                      >
-                        Project
-                      </a>
-                    </Col>
-                    <Col>
-                      <a
-                        class="dropdown-item"
-                        href="#modul"
-                        className="tulisan"
-                      >
-                        Modul
-                      </a>
-                    </Col>
-                    <Col>
-                      <a
-                        class="dropdown-item"
-                        href="#struktur-organisasi"
-                        className="tulisan"
-                      >
-                        Struktur Organisasi
-                      </a>
-                    </Col>
-                  </Row>
-                </div>
+                  <div className="hover-underline-animation menu">Home</div>
+                  </div>
               </li>
             </Nav.Link>
             <Nav.Link href="#about">

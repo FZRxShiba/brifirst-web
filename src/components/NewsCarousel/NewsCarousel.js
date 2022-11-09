@@ -32,7 +32,29 @@ const NewsCarousel = () => {
           </Container>
         </Carousel.Caption>
       </Carousel.Item>
+
+      <Carousel.Item>
+        <img className="d-block w-100" src={img1} alt="First slide" />
+        <Carousel.Caption>
+          <Container>
+            <Row>
+              <Col></Col>
+              <Col className="news-container">
+                <img
+                  className="d-block w-100"
+                  src={img2}
+                  width="800"
+                  height="250"
+                />
+              </Col>
+            </Row>
+          </Container>
+        </Carousel.Caption>
+      </Carousel.Item>
     </Carousel>
+
+
+
   );
 };
 
