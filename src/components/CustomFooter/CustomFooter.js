@@ -86,10 +86,10 @@ export default function App() {
         </MDBContainer>
       </section>
 
-      <div className="footer text-left p-2 footBold">
-        © 2022 Copyright PT Bank Rakyat Indonesia (Persero) Tbk. All Right
+      <div className="footer text-left p-2 footBold" >
+       <div className="footermargin">© 2022 Copyright PT Bank Rakyat Indonesia (Persero) Tbk. All Right
         Reserved.
-        <a className="'text-reset fw-bold'" href=""></a>
+        <a className="'text-reset fw-bold'" href=""></a></div> 
       </div>
     </MDBFooter>
   );

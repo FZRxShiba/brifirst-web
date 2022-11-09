@@ -1,12 +1,5 @@
 .footer {
-  background-image: linear-gradient(
-    to right,
-    rgba(110, 69, 225, 1),
-    rgba(137, 212, 207, 1)
-  );
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(90deg, #8FE1FF 10.98%, #3E5EB3 100%);
 }
 
 .footBold {
@@ -33,4 +26,8 @@ margin-left: -8px;
 
 .marjan {
 margin-left: -37px;
+}
+
+.footermargin {
+  margin-left: 355px;
 }
