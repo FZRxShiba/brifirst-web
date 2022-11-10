@@ -2,31 +2,31 @@ import React, { useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./HeaderCarousel.css";
 import Navbar from "react-bootstrap";
-import img1 from "./town.svg"
-import img2 from "./logo.png"
+import img1 from "./town.svg";
+import img2 from "./logo.png";
 import { Link } from "react-router-dom";
 
-
 const HeaderImg = () => {
-    return (
-        <div className="modul-container">
-            <div className="content">
-                <div className="contentImg" >
-                    <img width="400"  src={img2}/>
-                </div>
-                <p className="contentH">Project Strategis BRI yang Mentransformasi Finance System di BRI</p>
-                <div className="contentBtn">
-                    <Link to="/BRIFirst" className="btn btn-light">Read More</Link>
-                </div>
-            </div>
+  return (
+    <div className="header-container">
+      <div className="content">
+        <div className="contentImg">
+          <img width="400" src={img2} style={{marginTop: "160px"}} />
         </div>
-    )
-}
+        <p className="contentH">
+          Project Strategis BRI yang Mentransformasi Finance System di BRI
+        </p>
+        <div className="contentBtn">
+          <Link to="/BRIFirst" className="btn btn-light">
+            Read More
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-
-
-
-// 
+//
 // const HeaderCarousel = () => {jrfy6t78
 //   const [index, setIndex] = useState(0);
 
