@@ -16,7 +16,7 @@ const NewsCarousel = () => {
     >
       <Row>
         <Col xs={8} style={{}}>
-          <div className="textcolorku" style={{ color: "blue", fontSize: "75px", paddingTop: "30px", paddingLeft: "50px", textAlign: "left" }}>
+          <div className="textcolorku" style={{ color: "blue", fontSize: "65px", paddingTop: "30px", paddingLeft: "10px", textAlign: "left" }}>
             Temukan update &{" "}
             <p>
               <b>berita terbaru kami.</b>
@@ -28,19 +28,19 @@ const NewsCarousel = () => {
           <br></br>
           <br></br>
           <p>
-            <b style={{ fontSize: "35px", color: "blue", paddingLeft: "300px" }}>LIHAT LEBIH ></b>
+            <b style={{ fontSize: "35px", color: "blue", paddingLeft: "230px" }}>LIHAT LEBIH ></b>
           </p>
         </Col>
-        <Col>
+        <Col style={{paddingLeft:"60px"}}>
           <Carousel autoPlay={true} interval={5000} controls={false} indicators={false}>
             <Carousel.Item>
-              <img className="d-block w-5" src={news1} alt="First slide" style={{ height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9", padding: "-1em" }} />
+              <img className="d-block w-5" src={news1} alt="First slide" style={{ paddingLeft:"", height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9"}} />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-5" src={news1} alt="Second slide" style={{ height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9", padding: "-1em" }} />
+              <img className="d-block w-5" src={news1} alt="Second slide" style={{ paddingLeft:"",  height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9"}} />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-5" src={news1} alt="Third slide" style={{ height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9", padding: "-1em" }} />
+              <img className="d-block w-5" src={news1} alt="Third slide" style={{ paddingLeft:"",  height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9"}} />
             </Carousel.Item>
           </Carousel>
         </Col>
