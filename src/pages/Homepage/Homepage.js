@@ -2,6 +2,7 @@ import React from "react";
 import CardMenu from "../../components/CardMenu/CardMenu";
 import BenefitSection from "../../components/BenefitSection/BenefitSection";
 import HeaderCarousel from "../../components/HeaderCarousel/HeaderCarousel"
+import NewsCarousel from "../../components/NewsCarousel/NewsCarousel"
 
 const Homepage = () => {
   return (
@@ -9,6 +10,7 @@ const Homepage = () => {
       <HeaderCarousel />
       <CardMenu />
       <BenefitSection />
+      <NewsCarousel />
     </div>
   );
 };

@@ -10,8 +10,8 @@ import { Row, Col } from "react-bootstrap";
 
 export default function App() {
   return (
-    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
-      <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted" id="navigasi-footer">
+      <section className="d-flex justify-content-center justify-content-lg-between  border-bottom"></section>
 
       <section className="">
         <MDBContainer className="text-center text-md-start mt-5">

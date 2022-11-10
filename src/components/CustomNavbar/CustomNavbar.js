@@ -15,31 +15,31 @@ const CustomNavbar = () => {
       style={{ "--bs-bg-opacity": "0" }}
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={Logo} width="200" height="30" alt="Logo BUMN" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link href="#home">
+            <Nav.Link href="/">
               <li class="nav-item dropdown ktm-mega-menu">
                 <div className="NoBold">
                   <div className="hover-underline-animation menu">Home</div>
                   </div>
               </li>
             </Nav.Link>
-            <Nav.Link href="#about">
+            <Nav.Link href="#menu-kartu">
               <div className="hover-underline-animation NoBold">
                 <div className="menu">About</div>
               </div>
             </Nav.Link>
-            <Nav.Link href="#news">
+            <Nav.Link href="#menu-newsku">
               <div className="NoBold">
                 <div className="hover-underline-animation menu">News</div>
               </div>
             </Nav.Link>
-            <Nav.Link href="#contact">
+            <Nav.Link href="#navigasi-footer">
               <div className="hover-underline-animation NoBold">
                 <div className="menu">Contact</div>
               </div>
