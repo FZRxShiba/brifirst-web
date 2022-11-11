@@ -1,0 +1,20 @@
+.tree-container {
+  background: url("./town.svg");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: -100px;
+}
+
+.tree-wrapper {
+  margin-top: 100px;
+  padding: 60px;
+}
+
+.css-6bp6mk {
+  font-size: 15px;
+}
+
