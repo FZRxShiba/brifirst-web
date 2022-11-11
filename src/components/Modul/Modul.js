@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import { HiChevronDoubleDown } from "react-icons/hi";
 import OwlCarousel from "react-owl-carousel";
@@ -19,6 +19,10 @@ const Modul = () => {
     setId(pk);
     console.log(id);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   let dataModul = require("./Modul.json");
 
