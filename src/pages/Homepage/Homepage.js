@@ -8,7 +8,7 @@ const Homepage = () => {
   return (
     <div
       style={{
-        background: "linear-gradient(90.1deg, #d0e4ff 10.98%, #ffffff 99.93%)",
+        background: "#CEE0F6",
       }}
     >
       <HeaderCarousel />

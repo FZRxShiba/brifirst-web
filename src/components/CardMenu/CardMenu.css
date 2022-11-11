@@ -9,13 +9,13 @@
 
 .card-menu-container {
   border-radius: 7rem 7rem 0px 0px;
-  background: linear-gradient(90.5deg, #d0e4ff 10.98%, #ffffff 99.93%);
-  margin-top: -20px;
+  background: #CEE0F6;
+  margin-top: -40px;
   max-width: 850px;
 }
 
 .element-container {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .card-menu-title {
@@ -23,7 +23,7 @@
   font-size: 2rem;
   font-weight: bolder;
   color: #145187;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .card-menu-element-container {
