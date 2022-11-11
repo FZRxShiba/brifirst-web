@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
 import img1 from "./SAP.svg";
 import img2 from "./bif.svg";
 import "./BoardCarousel.css";

@@ -16,7 +16,7 @@ const NewsCarousel = () => {
       }}
     >
       <Row>
-        <Col xs={8} style={{}}>
+        <Col xs={8} >
           <div
             className="textcolorku"
             style={{
@@ -46,7 +46,7 @@ const NewsCarousel = () => {
                   paddingLeft: "200px",
                 }}
               >
-                LIHAT LEBIH >
+                LIHAT LEBIH {'>'}
               </b>
             </p>
           </Link>
