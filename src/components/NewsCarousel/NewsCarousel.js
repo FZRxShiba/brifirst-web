@@ -1,62 +1,106 @@
-import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import React from "react";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import news1 from "./news1.png";
 import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
-import img1 from "./gbrnews.png";
-import img2 from "./news.png";
-import "./NewsCarousel.css";
+import { Link } from "react-router-dom";
 
 const NewsCarousel = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
   return (
-    <div className="backgroundnews"><Carousel activeIndex={index} onSelect={handleSelect}>
-    <Carousel.Item>
-      <img className="d-block w-100" src={img1} alt="First slide" />
-      <Carousel.Caption>
-        <Container>
-          <Row>
-            <Col></Col>
-            <Col className="news-container">
+    <div
+      className="bgcardnews"
+      id="menu-newsku"
+      style={{
+        background: "linear-gradient(90deg, #d9f4ff 10.98%, #bec9e7 100%)",
+        padding: "100px",
+      }}
+    >
+      <Row>
+        <Col xs={8} style={{}}>
+          <div
+            className="textcolorku"
+            style={{
+              color: "#261472",
+              fontSize: "65px",
+              paddingTop: "30px",
+              paddingLeft: "10px",
+              textAlign: "left",
+            }}
+          >
+            Temukan update &
+            <p>
+              <b>berita terbaru kami.</b>
+            </p>
+          </div>
+          <p></p>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <Link to="/news">
+            <p>
+              <b
+                style={{
+                  fontSize: "35px",
+                  color: "#261472",
+                  paddingLeft: "200px",
+                }}
+              >
+                LIHAT LEBIH >
+              </b>
+            </p>
+          </Link>
+        </Col>
+        <Col style={{ paddingLeft: "40px" }}>
+          <Carousel
+            autoPlay={true}
+            interval={5000}
+            controls={false}
+            indicators={false}
+          >
+            <Carousel.Item>
               <img
-                className="d-block w-100"
-                src={img2}
-                width="800"
-                height="250"
+                className="d-block w-5"
+                src={news1}
+                alt="First slide"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
               />
-            </Col>
-          </Row>
-        </Container>
-      </Carousel.Caption>
-    </Carousel.Item>
-
-    <Carousel.Item>
-      <img className="d-block w-100" src={img1} alt="First slide" />
-      <Carousel.Caption>
-        <Container>
-          <Row>
-            <Col></Col>
-            <Col className="news-container">
+            </Carousel.Item>
+            <Carousel.Item>
               <img
-                className="d-block w-100"
-                src={img2}
-                width="800"
-                height="250"
+                className="d-block w-5"
+                src={news1}
+                alt="Second slide"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
               />
-            </Col>
-          </Row>
-        </Container>
-      </Carousel.Caption>
-    </Carousel.Item>
-  </Carousel></div>
-    
-
-
-
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-5"
+                src={news1}
+                alt="Third slide"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
+              />
+            </Carousel.Item>
+          </Carousel>
+        </Col>
+      </Row>
+    </div>
   );
 };
-
 export default NewsCarousel;

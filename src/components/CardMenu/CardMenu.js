@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 const CardMenu = () => {
   return (
-    <div className="card-menu-wrapper">
+    <div className="card-menu-wrapper" id="menu-kartu">
       <div className="card-menu-container">
         <div className="card-menu-title">BRI FINANCE ENTERPRISE SYSTEM</div>
         <div className="card-menu-element-container">
