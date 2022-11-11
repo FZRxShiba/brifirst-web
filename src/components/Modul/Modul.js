@@ -46,7 +46,9 @@ const Modul = () => {
       </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Body className="modal-body">
-          <h4><b>{dataModul[id].title}</b></h4>
+          <h4>
+            <b>{dataModul[id].title}</b>
+          </h4>
           <img
             className="modul-modal-img"
             src={require("" + dataModul[id].image + "")}
@@ -64,6 +66,12 @@ const Modul = () => {
             <b>Uker Terkait:</b>
             <p>{dataModul[id].uker}</p>
           </div>
+          {dataModul[id].jumlah != "-" && (
+            <div className="benefit-container">
+              <b>Jumlah Pengguna:</b>
+              <p>{dataModul[id].jumlah}</p>
+            </div>
+          )}
         </Modal.Body>
       </Modal>
     </div>

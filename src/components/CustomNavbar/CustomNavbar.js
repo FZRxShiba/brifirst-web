@@ -4,6 +4,7 @@ import Logo from "./Logo.svg";
 import Logobri from "./bri.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./CustomNavbar.css";
+import { Link } from "react-router-dom";
 
 const CustomNavbar = () => {
   return (
@@ -26,7 +27,7 @@ const CustomNavbar = () => {
               <li class="nav-item dropdown ktm-mega-menu">
                 <div className="NoBold">
                   <div className="hover-underline-animation menu">Home</div>
-                  </div>
+                </div>
               </li>
             </Nav.Link>
             <Nav.Link href="#menu-kartu">
