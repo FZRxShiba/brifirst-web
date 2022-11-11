@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import news1 from "./news1.png";
 import Carousel from "react-bootstrap/Carousel";
+import { Link } from "react-router-dom";
 
 const NewsCarousel = () => {
   return (
@@ -16,8 +17,17 @@ const NewsCarousel = () => {
     >
       <Row>
         <Col xs={8} style={{}}>
-          <div className="textcolorku" style={{ color: "blue", fontSize: "65px", paddingTop: "30px", paddingLeft: "10px", textAlign: "left" }}>
-            Temukan update &{" "}
+          <div
+            className="textcolorku"
+            style={{
+              color: "#261472",
+              fontSize: "65px",
+              paddingTop: "30px",
+              paddingLeft: "10px",
+              textAlign: "left",
+            }}
+          >
+            Temukan update &
             <p>
               <b>berita terbaru kami.</b>
             </p>
@@ -27,24 +37,69 @@ const NewsCarousel = () => {
           <br></br>
           <br></br>
           <br></br>
-          <p>
-            <b style={{ fontSize: "35px", color: "blue", paddingLeft: "230px" }}>LIHAT LEBIH ></b>
-          </p>
+          <Link to="/news">
+            <p>
+              <b
+                style={{
+                  fontSize: "35px",
+                  color: "#261472",
+                  paddingLeft: "200px",
+                }}
+              >
+                LIHAT LEBIH >
+              </b>
+            </p>
+          </Link>
         </Col>
-        <Col style={{paddingLeft:"60px"}}>
-          <Carousel autoPlay={true} interval={5000} controls={false} indicators={false}>
+        <Col style={{ paddingLeft: "40px" }}>
+          <Carousel
+            autoPlay={true}
+            interval={5000}
+            controls={false}
+            indicators={false}
+          >
             <Carousel.Item>
-              <img className="d-block w-5" src={news1} alt="First slide" style={{ paddingLeft:"", height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9"}} />
+              <img
+                className="d-block w-5"
+                src={news1}
+                alt="First slide"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
+              />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-5" src={news1} alt="Second slide" style={{ paddingLeft:"",  height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9"}} />
+              <img
+                className="d-block w-5"
+                src={news1}
+                alt="Second slide"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
+              />
             </Carousel.Item>
             <Carousel.Item>
-              <img className="d-block w-5" src={news1} alt="Third slide" style={{ paddingLeft:"",  height: "433px", width: "309px", boxShadow: "-1px 2px 9px #F4AAB9"}} />
+              <img
+                className="d-block w-5"
+                src={news1}
+                alt="Third slide"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
+              />
             </Carousel.Item>
           </Carousel>
         </Col>
-      </Row>{" "}
+      </Row>
     </div>
   );
 };

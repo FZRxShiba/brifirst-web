@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import Woman from "./woman.svg";
+import Woman from "./woman.png";
 import MultiDimension from "./image/1-multi-dimension.svg";
 import Automation from "./image/2-automation.svg";
 import Accuracy from "./image/3-accuracy.svg";
@@ -16,7 +16,7 @@ const BenefitSection = () => {
       <div className="benefit-sect-title">6 MANFAAT UTAMA BRIFIRST</div>
       <div className="benefit-sect-body">
         <Row>
-          <Col sm={4}>
+          <Col sm={3}>
             <Row>
               <div className="benefit-elements">
                 <img height="140" src={MultiDimension} />
@@ -36,12 +36,12 @@ const BenefitSection = () => {
               </div>
             </Row>
           </Col>
-          <Col sm={4}>
+          <Col sm={6}>
             <div className="benefit-elements">
-              <img width="400" src={Woman} style={{ marginTop: "50px" }} />
+              <img width="500" src={Woman} style={{ marginTop: "100px" }} />
             </div>
           </Col>
-          <Col sm={4}>
+          <Col sm={3}>
             <Row>
               <div className="benefit-elements">
                 <img height="140" src={Traceability} />
