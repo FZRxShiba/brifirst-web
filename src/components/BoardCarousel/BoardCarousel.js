@@ -11,7 +11,7 @@ const BoardCarousel = () => {
     setIndex(selectedIndex);
   };
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel style={{textAlign:"center"}} activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img className="board-container" src={img1} alt="First slide" />
       </Carousel.Item>
