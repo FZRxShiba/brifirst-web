@@ -51,7 +51,7 @@ const NewsCarousel = () => {
             </p>
           </Link>
         </Col>
-        <Col style={{ paddingLeft: "70px" }}>
+        <Col style={{ paddingLeft: "30px" }}>
           <Carousel
             autoPlay={true}
             interval={5000}
