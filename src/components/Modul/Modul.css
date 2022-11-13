@@ -82,3 +82,10 @@
   text-align: left!important;
   margin-top: 20px;
 }
+
+.tambahan{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,6 +1,14 @@
+.h1-so {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  margin-bottom: 40px;
+}
 .tree-container {
   background: url("./town.svg");
-  height: 800px;
+  height: 900px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,9 +20,78 @@
 .tree-wrapper {
   margin-top: 100px;
   padding: 60px;
+  overflow-x: auto;
 }
 
 .css-6bp6mk {
   font-size: 15px;
 }
 
+.root-comp {
+  background: url("./PM.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170px;
+  height: 200px;
+  margin-bottom: -31px;
+  min-width: 200px;
+  padding-top: 68px;
+}
+
+.main-title p,
+.main-subtitle p {
+  line-height: 4px;
+}
+.second-title p,
+.second-subtitle p {
+  line-height: 0.1px;
+  font-size: 12px;
+}
+.root-comp:hover,
+.co-comp:hover,
+.stream-comp:hover,
+.tambahan:hover {
+  transform: scale(1.05);
+  transition: all 0.6s ease;
+}
+
+.main-title,
+.second-title {
+  font-weight: bolder;
+}
+
+.main-subtitle,
+.second-subtitle {
+  padding-top: 5px;
+  color: #989898;
+}
+
+.co-comp {
+  background: url("./CO-PM.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 130px;
+  height: 200px;
+  margin-top: -31px;
+  margin-bottom: -31px;
+  min-width: 200px;
+  padding-top: 68px;
+}
+
+.stream-comp {
+  background: url("./STREAM.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 120px;
+  height: 200px;
+  margin-top: -42px;
+  margin-bottom: -31px;
+  min-width: 200px;
+  padding-top: 100px;
+}
+
+.connecting-line {
+  border-left: 2px solid white;
+  height: 173px;
+  margin-left: 100px;
+}
