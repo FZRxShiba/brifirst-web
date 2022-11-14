@@ -1,13 +1,21 @@
-.card-menu-container {
-  background: linear-gradient(90.1deg, #d0e4ff 10.98%, #ffffff 99.93%);
+.card-menu-wrapper {
   min-height: 100px;
-  padding: 50px;
-  border-radius: 28rem 28rem 0px 0px;
+  padding: 40px;
   margin-top: -140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-menu-container {
+  border-radius: 7rem 7rem 0px 0px;
+  background: #CEE0F6;
+  margin-top: -40px;
+  max-width: 850px;
 }
 
 .element-container {
-  padding: 2.2rem;
+  padding: 1rem;
 }
 
 .card-menu-title {
@@ -15,11 +23,12 @@
   font-size: 2rem;
   font-weight: bolder;
   color: #145187;
+  margin-top: 25px;
 }
 
 .card-menu-element-container {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .card-menu {

@@ -1,8 +1,5 @@
-import React, { useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import React from "react";
 import "./HeaderCarousel.css";
-import Navbar from "react-bootstrap";
-import img1 from "./town.svg";
 import img2 from "./logo.png";
 import { Link } from "react-router-dom";
 
@@ -14,7 +11,7 @@ const HeaderImg = () => {
           <img width="400" src={img2} style={{marginTop: "160px"}} />
         </div>
         <p className="contentH">
-          Project Strategis BRI yang Mentransformasi Finance System di BRI
+          Project Strategis BRI yang Mentransformasi<br/> Finance System di BRI
         </p>
         <div className="contentBtn">
           <Link to="/BRIFirst" className="btn btn-light">
