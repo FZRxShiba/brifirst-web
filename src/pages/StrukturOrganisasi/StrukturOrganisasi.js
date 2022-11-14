@@ -1,10 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import Modal from "react-bootstrap/Modal";
 import "./StrukturOrganisasi.css";
 import styled from "@emotion/styled";
 import { Tree, TreeNode } from "react-organizational-chart";
 import IMPL from "./IMPL.png";
 
 const StrukturOrganisasi = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => {
+    setShow(false);
+  };
+
+  const handleShow = () => {
+    setShow(true);
+  };
+
   const StyledNode = styled.div`
     padding: 5px;
     border-radius: 10px;
@@ -20,14 +31,14 @@ const StrukturOrganisasi = () => {
       <div className="tree-wrapper">
         <Tree
           nodePadding="0.1px"
-          lineWidth="2px"
-          lineColor={"white"}
-          lineBorderRadius={"10px"}
+          lineWidth="3px"
+          lineColor="white"
+          lineBorderRadius="10px"
           label={
             <StyledNode>
               <h1 className="h1-so">Struktur Organisasi BRIFIRST</h1>
 
-              <div className="root-comp">
+              <div className="root-comp" >
                 <div className="main-title">
                   <p>PROJECT</p>
                   <p>MANAGER</p>
@@ -43,7 +54,7 @@ const StrukturOrganisasi = () => {
           <TreeNode label={<div className="connecting-line"></div>}>
             <TreeNode
               label={
-                <div className="stream-comp">
+                <div className="stream-comp" onClick={handleShow}>
                   <div className="second-title" style={{ marginTop: "-10px" }}>
                     <p>PROJECT</p>
                     <p>DELIVERY</p>
@@ -177,6 +188,31 @@ const StrukturOrganisasi = () => {
           </TreeNode>
         </Tree>
       </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Body className="modal-body">
+          <p>PROJECT DELIVERY MANAGEMENT</p>
+          <Tree
+            nodePadding="0.1px"
+            lineWidth="3px"
+            lineColor="white"
+            lineBorderRadius="10px"
+            label={
+              <StyledNode>
+                <div className="root-comp">
+                  <div className="main-title">
+                    <p>PROJECT</p>
+                    <p>MANAGER</p>
+                  </div>
+                  <div className="main-subtitle">
+                    <p>SANDRA</p>
+                    <p>CHALIK</p>
+                  </div>
+                </div>
+              </StyledNode>
+            }
+          ></Tree>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };

@@ -1,3 +1,7 @@
+a {
+  color: black!important;
+}
+
 .modul-container-title{
   text-align: center;
   font-size: 60px;
@@ -84,8 +88,8 @@
 }
 
 .tambahan{
-  text-align: center;
+  text-align: left;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
