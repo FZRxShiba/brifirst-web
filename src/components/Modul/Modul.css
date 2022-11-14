@@ -1,3 +1,7 @@
+/* a {
+  color: black!important;
+} */
+
 .modul-container-title{
   text-align: center;
   font-size: 60px;
@@ -81,4 +85,11 @@
 .benefit-container{
   text-align: left!important;
   margin-top: 20px;
+}
+
+.tambahan{
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: left;
 }

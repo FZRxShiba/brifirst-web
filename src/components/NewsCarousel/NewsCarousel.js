@@ -16,7 +16,7 @@ const NewsCarousel = () => {
       }}
     >
       <Row>
-        <Col xs={8} style={{}}>
+        <Col xs={8}>
           <div
             className="textcolorku"
             style={{
@@ -46,12 +46,12 @@ const NewsCarousel = () => {
                   paddingLeft: "200px",
                 }}
               >
-                LIHAT LEBIH >
+                LIHAT LEBIH {">"}
               </b>
             </p>
           </Link>
         </Col>
-        <Col style={{ paddingLeft: "40px" }}>
+        <Col style={{ paddingLeft: "30px" }}>
           <Carousel
             autoPlay={true}
             interval={5000}

@@ -22,7 +22,7 @@ const ReadMore = () => {
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <div>
-            <p className="contentC">
+            <p className="contentC" style={{width:"900px", height:"400px",margin:"auto"}}>
               Project Strategis BRI yang mentransformasi finance sytem di BRI.
               <br></br>
               <br></br>
@@ -39,7 +39,7 @@ const ReadMore = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div>
-            <p className="contentC">
+            <p className="contentC" style={{width:"900px", height:"400px",margin:"auto"}}>
               The BRIFIRST initiative!
               <br></br>
               <br></br>

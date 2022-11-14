@@ -10,11 +10,11 @@ const HeaderImg = () => {
         <div className="contentImg">
           <img width="400" src={img1} style={{marginTop: "250px"}} />
         </div>
-        <p className="contentH">
+        <p className="header-carousel-title">
           Project Strategis BRI yang Mentransformasi<br/> Finance System di BRI
         </p>
         <div className="contentBtn">
-          <Link to="/brifirst" className="contentH" style={{fontSize:"20px"}}>
+          <Link to="/brifirst" className="contentH" style={{fontSize:"20px", color: "white"}}>
             Read More {">"}{">"}
           </Link>
         </div>
