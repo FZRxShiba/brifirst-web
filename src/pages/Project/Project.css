@@ -1,0 +1,10 @@
+.bgcr {
+    background: url("./background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: px;
+    margin-top: -80px;
+    
+  }
