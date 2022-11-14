@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeaderCarousel.css";
-import img2 from "./logo.png";
+import img1 from "./logo.svg";
 import { Link } from "react-router-dom";
 
 const HeaderImg = () => {
@@ -8,14 +8,14 @@ const HeaderImg = () => {
     <div className="header-container">
       <div className="content">
         <div className="contentImg">
-          <img width="400" src={img2} style={{marginTop: "160px"}} />
+          <img width="400" src={img1} style={{marginTop: "250px"}} />
         </div>
         <p className="contentH">
           Project Strategis BRI yang Mentransformasi<br/> Finance System di BRI
         </p>
         <div className="contentBtn">
-          <Link to="/BRIFirst" className="btn btn-light">
-            Read More
+          <Link to="/brifirst" className="contentH" style={{fontSize:"20px"}}>
+            Read More {">"}{">"}
           </Link>
         </div>
       </div>

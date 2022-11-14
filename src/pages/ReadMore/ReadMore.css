@@ -1,0 +1,44 @@
+.ReadMore {
+    background: url("./walpaperRM.svg");
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -170px;
+  }
+  
+  .contentImg {
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentC {
+    color: white;
+    text-shadow: 2px 2px 4px rgb(70, 70, 70);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  .contentBtn {
+    margin-top: 70px;
+    font-size: 20px;
+    color: blue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-control-next{
+    margin-right: -150px!important;
+  }
+  .carousel-control-prev{
+    margin-left: -150px!important;
+  }
+  

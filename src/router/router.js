@@ -6,6 +6,7 @@ import Homepage from "../pages/Homepage/Homepage";
 import StrukturOrganisasi from "../pages/StrukturOrganisasi/StrukturOrganisasi";
 import CustomFooter from "../components/CustomFooter/CustomFooter";
 import News from "../pages/News/News";
+import ReadMore from "../pages/ReadMore/ReadMore";
 
 const AllRoute = () => {
   return (
@@ -17,6 +18,7 @@ const AllRoute = () => {
       <Route path="/NewsCarousel" element={<NewsCarousel />} />
       <Route path="/CustomFooter" element={<CustomFooter />} />
       <Route path="/news" element={<News />} />
+      <Route path="/brifirst" element={<ReadMore/>} />
     </Routes>
   );
 };
