@@ -7,10 +7,13 @@ import { AiOutlineInstagram } from "react-icons/ai";
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import "./CustomFooter.css";
 import { Row, Col } from "react-bootstrap";
+import ScrollToTop from "react-scroll-to-top";
+
 
 export default function App() {
   return (
-    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted" id="navigasi-footer">
+    <div>
+          <MDBFooter bgColor="light" className="text-center text-lg-start text-muted" id="navigasi-footer">
       <section className="d-flex justify-content-center justify-content-lg-between  border-bottom"></section>
 
       <section className="">
@@ -100,5 +103,9 @@ export default function App() {
         </div>
       </div>
     </MDBFooter>
+      <div />
+      <ScrollToTop smooth />
+    </div>
+
   );
 }
