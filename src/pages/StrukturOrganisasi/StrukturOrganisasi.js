@@ -37,7 +37,6 @@ const StrukturOrganisasi = () => {
           label={
             <StyledNode>
               <h1 className="h1-so">Struktur Organisasi BRIFIRST</h1>
-
               <div className="root-comp" >
                 <div className="main-title">
                   <p>PROJECT</p>
