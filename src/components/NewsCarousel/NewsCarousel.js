@@ -15,7 +15,7 @@ const NewsCarousel = () => {
         padding: "100px",
       }}
     >
-      <Row>
+      {<Row>
         <Col xs={8}>
           <div
             className="textcolorku"
@@ -99,7 +99,7 @@ const NewsCarousel = () => {
             </Carousel.Item>
           </Carousel>
         </Col>
-      </Row>
+      </Row>}
     </div>
   );
 };
