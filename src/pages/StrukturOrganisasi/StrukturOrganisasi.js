@@ -37,8 +37,7 @@ const StrukturOrganisasi = () => {
           label={
             <StyledNode>
               <h1 className="h1-so">Struktur Organisasi BRIFIRST</h1>
-
-              <div className="root-comp" >
+              <div className="root-comp">
                 <div className="main-title">
                   <p>PROJECT</p>
                   <p>MANAGER</p>
@@ -190,27 +189,31 @@ const StrukturOrganisasi = () => {
       </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Body className="modal-body">
-          <p>PROJECT DELIVERY MANAGEMENT</p>
+          <p>
+            <b>PROJECT DELIVERY MANAGEMENT</b>
+          </p>
           <Tree
             nodePadding="0.1px"
             lineWidth="3px"
-            lineColor="white"
+            lineColor="black"
             lineBorderRadius="10px"
             label={
               <StyledNode>
-                <div className="root-comp">
-                  <div className="main-title">
-                    <p>PROJECT</p>
-                    <p>MANAGER</p>
-                  </div>
-                  <div className="main-subtitle">
-                    <p>SANDRA</p>
-                    <p>CHALIK</p>
-                  </div>
-                </div>
+                <div className="bu-lenny"></div>
               </StyledNode>
             }
-          ></Tree>
+          >
+            <TreeNode
+              label={
+                <div className="team-1">
+                  <p>LENNY JULIANA SINAGA</p>
+                  <p>TEAM LEADER</p>
+                </div>
+              }
+            ></TreeNode>
+            <TreeNode label={<div className="team-2"></div>}></TreeNode>
+            <TreeNode label={<div className="team-3"></div>}></TreeNode>
+          </Tree>
         </Modal.Body>
       </Modal>
     </div>

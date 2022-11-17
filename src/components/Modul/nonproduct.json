@@ -34,32 +34,5 @@
         "benefit": ["Meminimalkan kertas kerja manual", "Otomasi formula penyusunan RKAP-RBB, dan Breakdown Anggaran"],
         "uker": ["Head Office", "Relationship Officer", "Kantor Cabang Khusus", "Kantor Cabang"],
         "jumlah": "±1.800"
-    },
-    {
-        "pk": 4,
-        "title": "Enterprise General Ledger",
-        "image": "./ModulImage/egl.png",
-        "detail": "Penyusunan laporan keuangan BRI dengan meminimalisasi proses manual",
-        "benefit": ["Penyusunan laporan keuangan BRI akan bersumber dari SAP S/4HANA GL", "Seluruh Unit Kerja Luar Negeri (UKLN) akan terintegrasi otomatis ke system SAP secara harian", "Mengurangi proses manual dalam penyusunan laporan keuangan", "Proses adjustment dapat dilakukan lebih cepat sesuai bulan laporan"],
-        "uker": ["Head Office", "Relationship Officer", "Audit Internal Wilayah", "Kantor Cabang", "Kantor Cabang Pembantu", "Unit", "Corporate University"],
-        "jumlah": "-"
-    },
-    {
-        "pk": 5,
-        "title": "Financial Product Subledger",
-        "image": "./ModulImage/fps.png",
-        "detail": "Fokus kepada multidimensional, granularity infromasi dan mempercepat penyusunan laporan keuangan BRI",
-        "benefit": ["Comply dengan standar akuntasi dan regulatory (PSAK 71/IFRS 9/BPAK)", "Perhitungan Nilai Tercatat dan CKPN yang terintegrasi dan lebih akurat", "Tersedianya data rincian yang granular di level customer dan kontrak", "Sinkronisasi dan rekonsiliasi data antara GL & rincian secara otomatis (menghilangkan potensi selisih data)"],
-        "uker": ["Head Office, Relationship Officer", "Audit Internal Wilayah", "Kantor Cabang", "Kantor Cabang Pembantu", "Unit"],
-        "jumlah": "-"
-    },
-    {
-        "pk": 6,
-        "title": "Profitability Analysis and Performance Management",
-        "image": "./ModulImage/papm.png",
-        "detail": "Profitability dan performance analysis yang lebih granular dan akurat",
-        "benefit": ["Cost Revenue Allocation dapat dilakukan secara otomatis", "Perhitungan Fund Transfer Price yang lebih granular", "Menyediakan informasi profitability per direktorat, segmen, divisi, product, RM, dan customer"],
-        "uker": ["Head Office", "Relationship Officer", "Audit Internal Wilayah", "Kantor Cabang", "Kantor Cabang Pembantu", "Unit", "Corporate University"],
-        "jumlah": "-"
     }
 ]
