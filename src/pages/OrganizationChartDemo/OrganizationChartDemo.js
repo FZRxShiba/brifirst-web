@@ -1,32 +1,31 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { OrganizationChart } from "primereact/organizationchart";
+import { Col, Row } from "react-bootstrap";
+import PRODUCT from "./images/product.png";
+import NONPRODUCT from "./images/non-product.png";
+import r1 from "./images/r-1.svg";
+import r2 from "./images/r-2.svg";
+import r3 from "./images/r-3.svg";
+import r4 from "./images/r-4.svg";
+import r5 from "./images/r-5.svg";
+import l1 from "./images/l-1.svg";
+import l2 from "./images/l-2.svg";
+import l3 from "./images/l-3.svg";
+import l4 from "./images/l-4.svg";
+import l5 from "./images/l-5.svg";
+import l6 from "./images/l-6.svg";
+import l7 from "./images/l-7.svg";
+import l8 from "./images/l-8.svg";
+import brifirst from "./images/Logo.svg";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
-import { Col, Row } from "react-bootstrap";
-import PM from "./pm.svg";
-import PDM from "./pdm.svg";
-import COPM from "./co-pm.svg";
-import FUNC from "./functional.svg";
-import TECH from "./technical.svg";
-import PRODUCT from "./product.png";
-import NONPRODUCT from "./non-product.png";
-import r1 from "./r-1.svg";
-import r2 from "./r-2.svg";
-import r3 from "./r-3.svg";
-import r4 from "./r-4.svg";
-import r5 from "./r-5.svg";
-import l1 from "./l-1.svg";
-import l2 from "./l-2.svg";
-import l3 from "./l-3.svg";
-import l4 from "./l-4.svg";
-import l5 from "./l-5.svg";
-import l6 from "./l-6.svg";
-import l7 from "./l-7.svg";
-import l8 from "./l-8.svg";
-import brifirst from "./Logo.svg";
 import "./OrganizationChartDemo.css";
+
 const OrganizationChartDemo = () => {
+  let dataProduct = [l1, l2, l3, l4, l5, l6, l7, l8];
+  let dataNonProduct = [r1, r2, r3, r4, r5];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -35,10 +34,9 @@ const OrganizationChartDemo = () => {
     {
       label: (
         <img
-          src={PM}
+          src={require("./images/pm.svg").default}
           width="150"
-          style={{ marginBottom: "-1px" }}
-          className="org-comp"
+          className="org-comp minbot1"
         ></img>
       ),
       expanded: true,
@@ -46,10 +44,9 @@ const OrganizationChartDemo = () => {
         {
           label: (
             <img
-              src={PDM}
+              src={require("./images/pdm.svg").default}
               width="120"
-              style={{ marginTop: "-20px" }}
-              className="org-comp"
+              className="org-comp mintop20"
             ></img>
           ),
           expanded: false,
@@ -59,25 +56,23 @@ const OrganizationChartDemo = () => {
             <Row style={{ marginLeft: "35px" }}>
               <Col>
                 <img
-                  src={FUNC}
+                  src={require("./images/functional.svg").default}
                   width="100"
-                  style={{ marginTop: "20px", marginBottom: "-30px" }}
-                  className="org-comp"
+                  className="org-comp minbot30 top20"
                 ></img>
               </Col>
               <Col>
                 <img
-                  src={COPM}
+                  src={require("./images/co-pm.svg").default}
                   width="110"
-                  style={{ marginTop: "-20px", marginBottom: "-30px" }}
+                  className="mintop20 minbot30"
                 ></img>
               </Col>
               <Col>
                 <img
-                  src={TECH}
+                  src={require("./images/technical.svg").default}
                   width="100"
-                  style={{ marginTop: "20px", marginBottom: "-30px" }}
-                  className="org-comp"
+                  className="org-comp minbot30 top20"
                 ></img>
               </Col>
             </Row>
@@ -85,85 +80,33 @@ const OrganizationChartDemo = () => {
           expanded: true,
           children: [
             {
-              label: (
-                <img
-                  src={PRODUCT}
-                  width="180"
-                  style={{ marginTop: "-20px" }}
-                ></img>
-              ),
+              label: <img src={PRODUCT} width="180" className="mintop20"></img>,
               expanded: true,
               children: [
                 {
                   label: (
-                    <div style={{ marginTop: "-50px" }}>
+                    <div className="mintop50">
                       <Row>
-                        <Col xs={3}>
-                          <img
-                            src={l1}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={3}>
-                          <img
-                            src={l2}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={3}>
-                          <img
-                            src={l3}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={3}>
-                          <img
-                            src={l4}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
+                        {dataProduct.slice(0, 4).map((item) => (
+                          <Col xs={3}>
+                            <img
+                              src={item}
+                              width="110"
+                              className="org-comp top10"
+                            ></img>
+                          </Col>
+                        ))}
                       </Row>
                       <Row>
-                        <Col xs={3}>
-                          <img
-                            src={l5}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={3}>
-                          <img
-                            src={l6}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={3}>
-                          <img
-                            src={l7}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={3}>
-                          <img
-                            src={l8}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
+                        {dataProduct.slice(4, 8).map((item) => (
+                          <Col xs={3}>
+                            <img
+                              src={item}
+                              width="110"
+                              className="org-comp top10"
+                            ></img>
+                          </Col>
+                        ))}
                       </Row>
                     </div>
                   ),
@@ -172,60 +115,34 @@ const OrganizationChartDemo = () => {
             },
             {
               label: (
-                <img
-                  src={NONPRODUCT}
-                  width="180"
-                  style={{ marginTop: "-20px" }}
-                ></img>
+                <img src={NONPRODUCT} width="180" className="mintop20"></img>
               ),
               expanded: true,
               children: [
                 {
                   label: (
-                    <div style={{ marginTop: "-50px" }}>
+                    <div className="mintop50">
                       <Row>
-                        <Col xs={4}>
-                          <img
-                            src={r1}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={4}>
-                          <img
-                            src={r2}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={4}>
-                          <img
-                            src={r3}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
+                        {dataNonProduct.slice(0, 3).map((item) => (
+                          <Col xs={4}>
+                            <img
+                              src={item}
+                              width="110"
+                              className="org-comp top10"
+                            ></img>
+                          </Col>
+                        ))}
                       </Row>
                       <Row>
-                        <Col xs={6}>
-                          <img
-                            src={r4}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
-                        <Col xs={6}>
-                          <img
-                            src={r5}
-                            width="110"
-                            style={{ marginTop: "10px" }}
-                            className="org-comp"
-                          ></img>
-                        </Col>
+                        {dataNonProduct.slice(3, 5).map((item) => (
+                          <Col xs={6}>
+                            <img
+                              src={item}
+                              width="110"
+                              className="org-comp top10"
+                            ></img>
+                          </Col>
+                        ))}
                       </Row>
                     </div>
                   ),

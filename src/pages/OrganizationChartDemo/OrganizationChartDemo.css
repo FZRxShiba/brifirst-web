@@ -1,5 +1,5 @@
 .org-backdrop {
-  background: url("./town.svg");
+  background: url("./images/town.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,4 +43,26 @@
 .org-comp:hover {
   transform: scale(1.05);
   transition: all 0.6s ease;
+}
+
+.top10{
+  margin-top: 10px;
+}
+
+.minbot1{
+  margin-bottom: -1px;
+}
+
+.mintop20{
+  margin-top: -20px;
+}
+.top20{
+  margin-top: 20px;
+}
+.minbot30{
+  margin-bottom: -30px;
+}
+
+.mintop50{
+  margin-top: -50px;
 }
