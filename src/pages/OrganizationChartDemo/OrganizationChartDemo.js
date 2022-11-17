@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { OrganizationChart } from "primereact/organizationchart";
-import "primereact/resources/themes/lara-light-indigo/theme.css"; //theme
-import "primereact/resources/primereact.min.css"; //core css
-import "primeicons/primeicons.css"; //icons
+import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
 import { Col, Row } from "react-bootstrap";
 import PM from "./pm.svg";
 import PDM from "./pdm.svg";

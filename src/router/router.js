@@ -3,7 +3,6 @@ import CardMenu from "../components/CardMenu/CardMenu";
 import Modul from "../components/Modul/Modul";
 import NewsCarousel from "../components/NewsCarousel/NewsCarousel";
 import Homepage from "../pages/Homepage/Homepage";
-import StrukturOrganisasi from "../pages/StrukturOrganisasi/StrukturOrganisasi";
 import CustomFooter from "../components/CustomFooter/CustomFooter";
 import Project from "../pages/Project/Project";
 import News from "../pages/News/News";
