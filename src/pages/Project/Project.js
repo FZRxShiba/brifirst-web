@@ -17,10 +17,14 @@ const Project = () => {
           <img width="400" src={logo} style={{ marginTop: "230px",textAlign:"center" }} />
           </div>
       </div>
-      <Carousel>
+      <Carousel autoPlay={true}
+            interval={5000}
+            controls={true}
+            indicators={false}>
+        
         <Carousel.Item>
           <div>
-            <p className="kontenpj" style={{width:"1100px", height:"400px", paddingLeft:"150px",paddingTop:"-70px"}}>
+            <p className="kontenpj" style={{maxWidth:"1100px", height:"400px", paddingLeft:"150px",paddingTop:"-70px"}}>
              INISIASI PROJECT NEW FINANCE SYSTEM
               <br></br>
               <br></br>
@@ -34,7 +38,7 @@ const Project = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div>
-            <p className="kontenpj" style={{width:"1100px", height:"400px", paddingLeft:"150px",paddingTop:"-70px"}}>
+            <p className="kontenpj" style={{maxWidth:"1100px", height:"400px", paddingLeft:"150px",paddingTop:"-70px"}}>
               INISIASI PROYEK NEW FINANCE SYSTEM
               <br></br>
               <br></br>

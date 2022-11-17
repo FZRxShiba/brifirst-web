@@ -10,6 +10,9 @@ import News from "../pages/News/News1";
 import News2 from "../pages/News/News2";
 import News4 from "../pages/News/News4";
 import News5 from "../pages/News/News5";
+import News6 from "../pages/News/News6";
+import Berita from "../pages/Berita/Berita";
+import Newspage from "../pages/News/Newspage";
 import ReadMore from "../pages/ReadMore/ReadMore";
 
 const AllRoute = () => {
@@ -26,6 +29,9 @@ const AllRoute = () => {
       <Route path="/news/news2" element={<News2 />} />
       <Route path="/news/news4" element={<News4 />} />
       <Route path="/news/news5" element={<News5 />} />
+      <Route path="/news/news6" element={<News6 />} />
+      <Route path="/news/newspage" element={<Newspage />} />
+      <Route path="/berita/berita" element={<Berita />} />
       <Route path="/brifirst" element={<ReadMore/>} />
     </Routes>
   );
