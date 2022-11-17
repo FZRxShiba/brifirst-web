@@ -48,7 +48,7 @@ const CustomNavbar = () => {
             <Nav.Link href="#contact">
               <div className="logo-container">
                 <div className="menu">
-                  <img src={Logobri} width="90" height="30" alt="Logo" />
+                  <img src={Logobri} width="100" height="30" alt="Logo" />
                 </div>
               </div>
             </Nav.Link>

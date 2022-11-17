@@ -3,8 +3,8 @@
 }
 
 .backgroundnews {
-  background-color: linear-gradient(90deg, #d9f4ff 10.98%, #bec9e7 100%);
-  padding: 100px;
+  background-color: linear-gradient(50deg, #d9f4ff 1.98%, #bec9e7 100%);
+  padding: 50px;
 }
 
 .textnews {
