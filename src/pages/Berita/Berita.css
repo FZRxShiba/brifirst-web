@@ -1,0 +1,13 @@
+.imgnewsboxsection{
+    max-width: 400px;
+    min-width: 100px;
+  }
+
+  .imgnewsbg {
+  background: url("./wallpapernews.svg");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -200px;
+}

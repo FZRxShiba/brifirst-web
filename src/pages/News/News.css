@@ -1,0 +1,34 @@
+#image-section{
+    width: 100%;
+    height: auto;
+  };
+  
+
+.imgnews{
+    max-width: 400px;
+    min-width: 200px;
+  };
+
+  .imgnewsbox{
+    max-width: 400px;
+    min-width: 200px;
+  }
+
+  .bgproject {
+  background: url("./bgbrifirst.png");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -200px;
+}
+
+.imgnewsbox {
+  background: url("./walpaperRM.svg");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -200px;
+}
+

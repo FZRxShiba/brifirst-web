@@ -2,6 +2,11 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import news1 from "./news1.png";
+import editorial9 from "./editorial9.png";
+import editorial7 from "./editorial7.png";
+import editorial8 from "./editorial8.png";
+import editorial10 from "./editorial10.png";
+import editorial11 from "./editorial11.png";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 
@@ -37,7 +42,7 @@ const NewsCarousel = () => {
           <br></br>
           <br></br>
           <br></br>
-          <Link to="/news">
+          <Link to="/berita">
             <p>
               <b
                 style={{
@@ -52,50 +57,81 @@ const NewsCarousel = () => {
           </Link>
         </Col>
         <Col style={{ paddingLeft: "30px" }}>
-          <Carousel
-            autoPlay={true}
+          <Carousel autoPlay={true}
             interval={5000}
             controls={false}
-            indicators={false}
-          >
+            indicators={false}>
+             
+          
             <Carousel.Item>
+            <Link to="/news/news1">
               <img
                 className="d-block w-5"
-                src={news1}
-                alt="First slide"
+                src={editorial7}
+                alt="Editorial 7"
                 style={{
                   paddingLeft: "",
                   height: "433px",
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              />
+              /></Link>
             </Carousel.Item>
             <Carousel.Item>
+            <Link to="/news/news2">
               <img
                 className="d-block w-5"
-                src={news1}
-                alt="Second slide"
+                src={editorial8}
+                alt="Editorial 8"
                 style={{
                   paddingLeft: "",
                   height: "433px",
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              />
+              /></Link>
             </Carousel.Item>
             <Carousel.Item>
+            <Link to="/news/news4">
               <img
                 className="d-block w-5"
-                src={news1}
-                alt="Third slide"
+                src={editorial9}
+                alt="Editorial 9"
                 style={{
                   paddingLeft: "",
                   height: "433px",
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              />
+              /></Link>
+            </Carousel.Item>
+            <Carousel.Item>
+            <Link to="/news/news5">
+              <img
+                className="d-block w-5"
+                src={editorial10}
+                alt="Editorial 10"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
+              /></Link>
+            </Carousel.Item>
+            <Carousel.Item>
+            <Link to="/news/news6">
+              <img
+                className="d-block w-5"
+                src={editorial11}
+                alt="Editorial 11"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
+              /></Link>
             </Carousel.Item>
           </Carousel>
         </Col>
