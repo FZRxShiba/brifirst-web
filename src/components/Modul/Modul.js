@@ -40,7 +40,7 @@ const Modul = () => {
     <div className="modul-container">
       <div className="modul-container-title">7 Modul Utama</div>
       <div class="container-fluid">
-        <Carousel activeIndex={index} onSelect={handleSelect} controls={false}>
+        <Carousel activeIndex={index} onSelect={handleSelect} controls={false} style={{paddingBottom: "80px"}}>
           <Carousel.Item>
             <Row>
               <div className="modul-main-title">NON PRODUCT MODULE</div>
