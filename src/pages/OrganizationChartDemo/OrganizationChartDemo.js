@@ -54,21 +54,21 @@ const OrganizationChartDemo = () => {
         {
           label: (
             <Row style={{ marginLeft: "35px" }}>
-              <Col>
+              <Col xs={4}>
                 <img
                   src={require("./images/functional.svg").default}
                   width="100"
                   className="org-comp minbot30 top20"
                 ></img>
               </Col>
-              <Col>
+              <Col xs={4}>
                 <img
                   src={require("./images/co-pm.svg").default}
                   width="110"
                   className="mintop20 minbot30"
                 ></img>
               </Col>
-              <Col>
+              <Col xs={4}>
                 <img
                   src={require("./images/technical.svg").default}
                   width="100"
