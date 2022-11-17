@@ -8,6 +8,7 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol } from "mdb-react-ui-kit";
 import "./CustomFooter.css";
 import { Row, Col } from "react-bootstrap";
 import ScrollToTop from "react-scroll-to-top";
+import { Link } from 'react-router-dom';
 
 
 export default function App() {
@@ -61,13 +62,18 @@ export default function App() {
               </div>
 
               <p>
+                
                 <FiMail size={20} />
                 &nbsp;hotline_brifirst@bri.co.id
               </p>
 
               <p>
+                <div>
                 <AiOutlineInstagram size={20} />
-                &nbsp;@tim_brifirst
+                <a href="https://www.instagram.com/tim_brifirst/?hl=id">&nbsp;@tim_brifirst</a>
+
+                </div>
+                
               </p>
             </MDBCol>
 

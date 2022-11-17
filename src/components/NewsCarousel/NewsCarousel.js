@@ -59,6 +59,7 @@ const NewsCarousel = () => {
             indicators={false}
           >
             <Carousel.Item>
+            <Link to="/news/news1">
               <img
                 className="d-block w-5"
                 src={news1}
@@ -69,33 +70,49 @@ const NewsCarousel = () => {
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              />
+              /></Link>
             </Carousel.Item>
             <Carousel.Item>
+            <Link to="/news/news2">
               <img
                 className="d-block w-5"
                 src={news1}
-                alt="Second slide"
+                alt="First slide"
                 style={{
                   paddingLeft: "",
                   height: "433px",
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              />
+              /></Link>
             </Carousel.Item>
             <Carousel.Item>
+            <Link to="/news/news4">
               <img
                 className="d-block w-5"
                 src={news1}
-                alt="Third slide"
+                alt="First slide"
                 style={{
                   paddingLeft: "",
                   height: "433px",
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              />
+              /></Link>
+            </Carousel.Item>
+            <Carousel.Item>
+            <Link to="/news/news5">
+              <img
+                className="d-block w-5"
+                src={news1}
+                alt="First slide"
+                style={{
+                  paddingLeft: "",
+                  height: "433px",
+                  width: "309px",
+                  boxShadow: "-1px 2px 9px #F4AAB9",
+                }}
+              /></Link>
             </Carousel.Item>
           </Carousel>
         </Col>
