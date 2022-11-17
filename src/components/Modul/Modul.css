@@ -29,14 +29,13 @@
   text-align: center;
 }
 
-.modul-main-title{
+.modul-main-title {
   font-size: 25px;
   text-align: center;
   margin-bottom: 30px;
   color: white;
   font-weight: bold;
   text-shadow: 2px 2px 4px #474747;
-
 }
 
 .modul-title {
@@ -58,6 +57,7 @@
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
 }
 
 .modul-button {

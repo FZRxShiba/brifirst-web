@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./ReadMore.css";
 import img1 from "./logo.svg";
-
-import { Col, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import Container from "react-bootstrap/Container";
 
 const ReadMore = () => {
   const [index, setIndex] = useState(0);

@@ -2,37 +2,21 @@
     {
         "pk": 0,
         "title": "Fixed Asset Management & PSAK 73",
-        "image": "./ModulImage/fam.png",
-        "detail": "Integrasi Manajemen Aset Tetap secara <b>end to end</b> sesuai <b>standar akuntansi</b> dan <b>ketentuan regulator</b>",
-        "benefit": ["Best practice manajemen aset tetap", "Akurasi perhitungan dan percepatan proses depresiasi & amortisasi dalam system", "Otomasi pengelompokan dan reporting aktiva tetap secara fiskal"],
-        "uker": ["Head Office", "Corporate University", "Kantor Cabang Khusus", "Relationship Officer", "Audit Internal Wilayah", "Kantor Cabang", "Kantor Cabang Pembantu", "Unit"],
-        "jumlah": "±24.000"
+        "image": "./ModulImage/fam.png"
     },
     {
         "pk": 1,
         "title": "Income & Expense Management",
-        "image": "./ModulImage/iem.png",
-        "detail": "Pembukuan biaya <b>(OPEX), pendapatan lainnya, persekot, kas porti, persediaan, dan biaya dibayar dimuka</b>",
-        "benefit": ["Semua pembukuan tercatat di cost center yang benar", "Control budget dan otomasi perhitungan perpajakan", "Mendukung sinergi back office (SBO)"],
-        "uker": ["Head Office", "Corporate University", "Kantor Cabang Khusus", "Relationship Officer", "Audit Internal Wilayah", "Kantor Cabang", "Kantor Cabang Pembantu", "Unit"],
-        "jumlah": "±41.000"
+        "image": "./ModulImage/iem.png"
     },
     {
         "pk": 2,
         "title": "Financial Consolidation",
-        "image": "./ModulImage/fc.png",
-        "detail": "Penyusunan laporan keuangan <b>konsolidasi aktual</b> dan <b>Budget (RKAP dan RBB BRI Grup) by system</b>",
-        "benefit": ["Meminimalkan kertas kerja manual konsolidasi", "Proses konsolidasi otomatis by system dan dilakukan secara bulanan"],
-        "uker": ["FMA (Financial & Management Accounting Division)", "SBM (Subsidiary Management Division)", "PPM (Planning, Budgeting, & Performance Management Division)", "Subsidiary"],
-        "jumlah": "±50"
+        "image": "./ModulImage/fc.png"
     },
     {
         "pk": 3,
         "title": "Planning & Budgeting",
-        "image": "./ModulImage/pb.png",
-        "detail": "Proses penyusunan <b>RKAP, RBB, dan Breakdown Anggaran by system</b>",
-        "benefit": ["Meminimalkan kertas kerja manual", "Otomasi formula penyusunan RKAP-RBB, dan Breakdown Anggaran"],
-        "uker": ["Head Office", "Relationship Officer", "Kantor Cabang Khusus", "Kantor Cabang"],
-        "jumlah": "±1.800"
+        "image": "./ModulImage/pb.png"
     }
 ]
