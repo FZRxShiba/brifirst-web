@@ -11,17 +11,25 @@ const BoardCarousel = () => {
     setIndex(selectedIndex);
   };
   return (
-    <Carousel style={{textAlign:"center"}} activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <img className="board-container" src={img1} alt="First slide" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img className="board-container" src={img2} alt="Second slide" />
-      </Carousel.Item>
-    </Carousel>
+    <div className="card-menu-wrap">
+      <div className="card-menu-cont">
+        <div className="card-tit">YANG BARU DI BRIFIRST</div>
+        <div className="card-board"><Carousel
+          style={{ textAlign: "center" }}
+          activeIndex={index}
+          onSelect={handleSelect}
+        >
+          <Carousel.Item>
+            <img className="board-container" src={img1} alt="First slide" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="board-container" src={img2} alt="Second slide" />
+          </Carousel.Item>
+        </Carousel></div>
+        
+      </div>
+    </div>
   );
 };
 
 export default BoardCarousel;
-
-
