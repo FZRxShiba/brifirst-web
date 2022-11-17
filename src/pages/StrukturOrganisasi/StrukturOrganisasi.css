@@ -91,7 +91,48 @@
 }
 
 .connecting-line {
-  border-left: 2px solid white;
+  border-left: 3px solid white;
   height: 173px;
   margin-left: 100px;
+}
+
+
+.bu-lenny {
+  background: url("./team-leader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170px;
+  height: 200px;
+  margin-bottom: -27px;
+  min-width: 200px;
+}
+
+.team-1 {
+  background: url("./team-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170px;
+  height: 200px;
+  min-width: 200px;
+  margin-top: -15px;
+}
+
+.team-2 {
+  background: url("./team-2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170px;
+  height: 200px;
+  min-width: 200px;
+  margin-top: -15px;
+}
+
+.team-3 {
+  background: url("./team-3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170px;
+  height: 200px;
+  min-width: 200px;
+  margin-top: -15px;
 }
