@@ -1,6 +1,6 @@
 .bgnewsku {
   background: url("./bgbrifirst.png");
-  height: 1500px;
+  height: 1000px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,12 +25,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: -300px;
+}
+
+.kontenpi {
+  color: white;
+  padding-left: -10px;
+  text-shadow: 2px 2px 4px rgb(70, 70, 70);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
 }
 
 .responsivebg {
-  padding-left: 400px;
-  padding-top: 30px;
+  padding-left: 260px;
+  padding-top: 50px;
   width: 80%;
   height: auto;
 }

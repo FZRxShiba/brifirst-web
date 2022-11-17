@@ -20,17 +20,17 @@ const HomepageNews = () => {
           <Row>
             <Col>
               <Link to="/news/news1">
-                <img style={{ paddingLeft: "60px" }} src={news1} alt="editorial7" height="500px" width="auto" id="image-news-section" />
+                <img style={{ paddingLeft: "60px" }} src={news1} alt="editorial7" height="300" width="auto" id="image-news-section" />
               </Link>
             </Col>
             <Col>
               <Link to="/news/news2">
-                <img style={{ paddingLeft: "60px" }} src={news2} alt="editorial8" height="500px" width="auto" id="image-news-section" />
+                <img style={{ paddingLeft: "60px" }} src={news2} alt="editorial8" height="300px" width="auto" id="image-news-section" />
               </Link>
             </Col>
             <Col>
               <Link to="/news/news4">
-                <img style={{ paddingLeft: "60px" }} src={news3} alt="editorial9" height="500px" width="auto" id="image-news-section" />
+                <img style={{ paddingLeft: "60px" }} src={news3} alt="editorial9" height="300px" width="auto" id="image-news-section" />
               </Link>
             </Col>
           </Row>
@@ -38,13 +38,13 @@ const HomepageNews = () => {
           <Row>
             <Col>
               <Link to="/news/news5">
-                <img style={{ paddingLeft: "60px" }} src={news4} alt="editorial10" height="500px" width="auto" id="image-news-section" />
+                <img style={{ paddingLeft: "60px" }} src={news4} alt="editorial10" height="300px" width="auto" id="image-news-section" />
               </Link>
             </Col>
             <Col xs={4}></Col>
             <Col>
               <Link to="/news/news6">
-                <img style={{ paddingLeft: "60px" }} src={news5} alt="editorial11" height="500px" width="auto" id="image-news-section" />
+                <img style={{ paddingLeft: "60px" }} src={news5} alt="editorial11" height="300px" width="auto" id="image-news-section" />
               </Link>
             </Col>
           </Row>
