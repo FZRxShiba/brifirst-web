@@ -8,6 +8,7 @@ import CustomFooter from "../components/CustomFooter/CustomFooter";
 import Project from "../pages/Project/Project";
 import News from "../pages/News/News";
 import ReadMore from "../pages/ReadMore/ReadMore";
+import OrganizationChartDemo from "../pages/OrganizationChartDemo/OrganizationChartDemo";
 
 const AllRoute = () => {
   return (
@@ -15,7 +16,7 @@ const AllRoute = () => {
       <Route path="/" element={<Homepage />} />
       <Route path="/project" element={<Project />} />
       <Route path="/modul" element={<Modul />} />
-      <Route path="/struktur-organisasi" element={<StrukturOrganisasi />} />
+      <Route path="/struktur-organisasi" element={<OrganizationChartDemo />} />
       <Route path="/CardMenu" element={<CardMenu />} />
       <Route path="/NewsCarousel" element={<NewsCarousel />} />
       <Route path="/CustomFooter" element={<CustomFooter />} />

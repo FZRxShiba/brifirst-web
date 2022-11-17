@@ -1,13 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Modal from "react-bootstrap/Modal";
 import { HiChevronDoubleDown } from "react-icons/hi";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./Modul.css";
 import Carousel from "react-bootstrap/Carousel";
-import fuck from "./bgmodul.svg";
-import halo from "./ModulImage/egl.png";
 import { Row, Col } from "react-bootstrap";
 
 const Modul = () => {
