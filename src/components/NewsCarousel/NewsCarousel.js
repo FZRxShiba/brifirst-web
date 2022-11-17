@@ -1,7 +1,6 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import news1 from "./news1.png";
 import editorial9 from "./editorial9.png";
 import editorial7 from "./editorial7.png";
 import editorial8 from "./editorial8.png";
@@ -42,7 +41,7 @@ const NewsCarousel = () => {
           <br></br>
           <br></br>
           <br></br>
-          <Link to="/berita">
+          <Link to="/news">
             <p>
               <b
                 style={{
@@ -61,8 +60,7 @@ const NewsCarousel = () => {
             interval={5000}
             controls={false}
             indicators={false}>
-             
-          
+
             <Carousel.Item>
             <Link to="/news/news1">
               <img
