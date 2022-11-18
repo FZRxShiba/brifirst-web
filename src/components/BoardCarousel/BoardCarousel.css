@@ -14,33 +14,20 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  display:block;
+  display: block;
   box-shadow: 1px 1px 10px #00000083;
 }
 
-/* .card-menu-cont {
-  background-color: rgb(182, 172, 172)!important;
-  margin-top: -100px;
-  border-radius: 10rem 10rem 0rem 0rem;
-  padding-top: 50px;
-  align-items: center;
-
-  
-} */
-
-
-.card-tit{
+.card-tit {
   text-align: center;
   font-size: 3rem;
-  text-shadow: 1px 1px 10px #00000083;
   margin-bottom: 50px;
   font-weight: bolder;
   color: #145187;
   margin-top: 50px;
 }
 
-  .card-board{
-    display: contents;
-    justify-content: center;
-    
-  }
+.card-board {
+  display: contents;
+  justify-content: center;
+}

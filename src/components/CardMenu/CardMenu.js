@@ -19,11 +19,11 @@ const CardMenu = () => {
                 <div className="card-menu">MODUL</div>
               </Link>
             </Col>
-            
+
             <Col className="element-container">
-            <Link to="/project">
-              <img className="card-img" src={Project} />
-              <div className="card-menu">PROJECT</div>
+              <Link to="/project">
+                <img className="card-img" src={Project} />
+                <div className="card-menu">PROJECT</div>
               </Link>
             </Col>
             <Col className="element-container">

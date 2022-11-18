@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import project1 from "./project1.png";
 import logo from "./logo.svg";
 import bgbrifrst from "./bgbrifirst.png";
@@ -10,6 +10,9 @@ import Carousel from "react-bootstrap/Carousel";
 import "./Project.css";
 
 const Project = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="bgnewsku">
       <div className="content">
