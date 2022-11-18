@@ -57,7 +57,8 @@ const OrganizationChartDemo = () => {
               <Col xs={4}>
                 <img
                   src={require("./images/functional.svg").default}
-                  width="100"
+                  width="120"
+                  style={{ marginRight: "-30px" }}
                   className="org-comp minbot30 top20"
                 ></img>
               </Col>
@@ -65,13 +66,15 @@ const OrganizationChartDemo = () => {
                 <img
                   src={require("./images/co-pm.svg").default}
                   width="110"
+                  style={{ marginLeft: "-5px" }}
                   className="mintop20 minbot30"
                 ></img>
               </Col>
               <Col xs={4}>
                 <img
                   src={require("./images/technical.svg").default}
-                  width="100"
+                  width="110"
+                  style={{ marginLeft: "-17px" }}
                   className="org-comp minbot30 top20"
                 ></img>
               </Col>
@@ -134,15 +137,22 @@ const OrganizationChartDemo = () => {
                         ))}
                       </Row>
                       <Row>
-                        {dataNonProduct.slice(3, 5).map((item) => (
-                          <Col xs={6}>
+                        <Col xs={6}>
+                          <img
+                            src={r4}
+                            width="110"
+                            className="org-comp top10"
+                            style={{marginRight:"-60px"}}
+                          ></img>
+                        </Col>
+                        <Col xs={6}>
                             <img
-                              src={item}
+                              src={r5}
                               width="110"
                               className="org-comp top10"
+                              style={{marginLeft:"-60px"}}
                             ></img>
                           </Col>
-                        ))}
                       </Row>
                     </div>
                   ),
