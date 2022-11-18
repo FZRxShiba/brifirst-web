@@ -4,8 +4,8 @@ import bgnews from "./bgbrifirst.png";
 
 const News4 = () => {
   return (
-    <div class="imgnews bgnewsku">
-  <img src={news3} alt={news3} height="auto" width="100%" id="image-section"/>
+    <div class="imgnews bgproject-n2">
+  
 </div>
   )
 }
