@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useState} from "react";
+import Modal from "react-bootstrap/Modal";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import editorial9 from "./editorial9.png";
@@ -6,10 +7,28 @@ import editorial7 from "./editorial7.png";
 import editorial8 from "./editorial8.png";
 import editorial10 from "./editorial10.png";
 import editorial11 from "./editorial11.png";
+import news7 from "./news7.png";
+import news8 from "./news8.png";
+import news9 from "./news9.png";
+import news10 from "./news10.png";
+import news11 from "./news11.png";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
 
 const NewsCarousel = () => {
+  const [show, setShow] = useState(false);
+  const [data, setData] = useState([]);
+  const [image, setImage] = useState("");
+
+  const handleClose = () => {
+    setShow(false);
+  };
+
+  const handleShow = (img) => {
+    setShow(true);
+    setImage(img);
+  };
+
   return (
     <div
       className="bgcardnews"
@@ -62,8 +81,11 @@ const NewsCarousel = () => {
             indicators={false}>
 
             <Carousel.Item>
-            <Link to="/news/news1">
-              <img
+            
+             
+              <img onClick={() =>
+                  handleShow(news7)
+                }
                 className="d-block w-5"
                 src={editorial7}
                 alt="Editorial 7"
@@ -73,7 +95,7 @@ const NewsCarousel = () => {
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              /></Link>
+              />
             </Carousel.Item>
             <Carousel.Item>
             <Link to="/news/news2">
@@ -134,6 +156,11 @@ const NewsCarousel = () => {
           </Carousel>
         </Col>
       </Row>}
+      <Modal show={show} onHide={handleClose} dialogClassName="modal-90w" aria-labelledby="example-custom-modal-styling-title" centered>
+        <Modal.Body className="modal-body">
+          <img height="840" src={image} />
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };

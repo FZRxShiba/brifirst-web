@@ -5,7 +5,6 @@ import bgnews from "./bgbrifirst.png";
 const News4 = () => {
   return (
     <div class="imgnews bgproject-n2">
-  
 </div>
   )
 }
