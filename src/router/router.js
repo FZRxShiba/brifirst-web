@@ -14,7 +14,6 @@ import Berita from "../pages/Berita/Berita";
 import ReadMore from "../pages/ReadMore/ReadMore";
 import OrganizationChartDemo from "../pages/OrganizationChartDemo/OrganizationChartDemo";
 import HomepageNews from "../pages/News/HomepageNews";
-import Home from "../pages/Home/Home";
 
 const AllRoute = () => {
   return (
@@ -34,7 +33,6 @@ const AllRoute = () => {
       <Route path="/news/news6" element={<News6 />} />
       <Route path="/berita/berita" element={<Berita />} />
       <Route path="/brifirst" element={<ReadMore/>} />
-      <Route path="/halo" element={<Home/>} />
     </Routes>
   );
 };

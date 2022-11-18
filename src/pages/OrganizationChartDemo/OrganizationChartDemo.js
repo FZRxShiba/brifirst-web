@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { OrganizationChart } from "primereact/organizationchart";
 import { Col, Row } from "react-bootstrap";
+import Modal from "react-bootstrap/Modal";
 import PRODUCT from "./images/product.png";
 import NONPRODUCT from "./images/non-product.png";
 import r1 from "./images/r-1.svg";
@@ -21,8 +22,25 @@ import "primereact/resources/themes/lara-light-indigo/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import "./OrganizationChartDemo.css";
+import pm from "./people/pm-sc.png";
+import copmErly from "./people/bu erly-03.png";
+import copmTina from "./people/bu tina-03-03.png";
 
 const OrganizationChartDemo = () => {
+  const [show, setShow] = useState(false);
+  const [dataa, setDataa] = useState([]);
+  const [image, setImage] = useState("");
+
+  const handleClose = () => {
+    setShow(false);
+  };
+
+  const handleShow = (data, img) => {
+    setShow(true);
+    setDataa(data);
+    setImage(img);
+  };
+
   let dataProduct = [l1, l2, l3, l4, l5, l6, l7, l8];
   let dataNonProduct = [r1, r2, r3, r4, r5];
 
@@ -37,6 +55,7 @@ const OrganizationChartDemo = () => {
           src={require("./images/pm.svg").default}
           width="150"
           className="org-comp minbot1"
+          onClick={() => handleShow(["PROJECT MANAGER", "Sandra Chalik", "00279635"], pm)}
         ></img>
       ),
       expanded: true,
@@ -60,13 +79,19 @@ const OrganizationChartDemo = () => {
                   width="120"
                   style={{ marginRight: "-30px" }}
                   className="org-comp minbot30 top20"
+                  onClick={() =>
+                    handleShow(
+                      ["CO. PROJECT MANAGER", "Rouli Erlyana Ambarita", "00001554"],
+                      copmErly
+                    )
+                  }
                 ></img>
               </Col>
               <Col xs={4}>
                 <img
                   src={require("./images/co-pm.svg").default}
                   width="110"
-                  style={{ marginLeft: "-5px" }}
+                  style={{ marginLeft: "-5px", marginBottom: "13px" }}
                   className="mintop20 minbot30"
                 ></img>
               </Col>
@@ -76,6 +101,12 @@ const OrganizationChartDemo = () => {
                   width="110"
                   style={{ marginLeft: "-17px" }}
                   className="org-comp minbot30 top20"
+                  onClick={() =>
+                    handleShow(
+                      ["CO. PROJECT MANAGER", "Marthina Papilaya", "00000810"],
+                      copmTina
+                    )
+                  }
                 ></img>
               </Col>
             </Row>
@@ -142,17 +173,17 @@ const OrganizationChartDemo = () => {
                             src={r4}
                             width="110"
                             className="org-comp top10"
-                            style={{marginRight:"-60px"}}
+                            style={{ marginRight: "-60px" }}
                           ></img>
                         </Col>
                         <Col xs={6}>
-                            <img
-                              src={r5}
-                              width="110"
-                              className="org-comp top10"
-                              style={{marginLeft:"-60px"}}
-                            ></img>
-                          </Col>
+                          <img
+                            src={r5}
+                            width="110"
+                            className="org-comp top10"
+                            style={{ marginLeft: "-60px" }}
+                          ></img>
+                        </Col>
                       </Row>
                     </div>
                   ),
@@ -173,6 +204,16 @@ const OrganizationChartDemo = () => {
         value={data}
         style={{ marginTop: "100px" }}
       ></OrganizationChart>
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Body className="modal-body">
+          <h3 style={{ marginBottom: "20px" }}>
+            <b>{dataa[0]}</b>
+          </h3>
+          <img height="200" src={image} />
+          <h4 style={{ marginTop: "20px" }}>{dataa[1]}</h4>
+          <p>PN: {dataa[2]}</p>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 };
