@@ -55,6 +55,7 @@ const Project = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
+        <h1 className="roadmap1" style={{ maxWidth: "1100px", height: "300px", paddingLeft: "200px",}}>Roadmap Implementasi Sistem Keuangan BRIFIRST</h1>
           <img src={roadmap} alt="roadmap" class="responsivebg"></img>
         </Carousel.Item>
       </Carousel>
