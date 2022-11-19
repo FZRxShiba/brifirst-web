@@ -14,6 +14,7 @@ import news10 from "./news10.png";
 import news11 from "./news11.png";
 import Carousel from "react-bootstrap/Carousel";
 import { Link } from "react-router-dom";
+import "./NewsCarousel.css";
 
 const NewsCarousel = () => {
   const [show, setShow] = useState(false);
@@ -98,8 +99,9 @@ const NewsCarousel = () => {
               />
             </Carousel.Item>
             <Carousel.Item>
-            <Link to="/news/news2">
-              <img
+            <img onClick={() =>
+                  handleShow(news8)
+                }
                 className="d-block w-5"
                 src={editorial8}
                 alt="Editorial 8"
@@ -109,11 +111,12 @@ const NewsCarousel = () => {
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              /></Link>
+              />
             </Carousel.Item>
             <Carousel.Item>
-            <Link to="/news/news4">
-              <img
+            <img onClick={() =>
+                  handleShow(news9)
+                }
                 className="d-block w-5"
                 src={editorial9}
                 alt="Editorial 9"
@@ -123,11 +126,12 @@ const NewsCarousel = () => {
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              /></Link>
+              />
             </Carousel.Item>
             <Carousel.Item>
-            <Link to="/news/news5">
-              <img
+            <img onClick={() =>
+                  handleShow(news10)
+                }
                 className="d-block w-5"
                 src={editorial10}
                 alt="Editorial 10"
@@ -137,11 +141,12 @@ const NewsCarousel = () => {
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              /></Link>
+              />
             </Carousel.Item>
             <Carousel.Item>
-            <Link to="/news/news6">
-              <img
+            <img onClick={() =>
+                  handleShow(news11)
+                }
                 className="d-block w-5"
                 src={editorial11}
                 alt="Editorial 11"
@@ -151,13 +156,13 @@ const NewsCarousel = () => {
                   width: "309px",
                   boxShadow: "-1px 2px 9px #F4AAB9",
                 }}
-              /></Link>
+              />
             </Carousel.Item>
           </Carousel>
         </Col>
       </Row>}
-      <Modal show={show} onHide={handleClose} dialogClassName="modal-90w" aria-labelledby="example-custom-modal-styling-title" centered>
-        <Modal.Body className="modal-body">
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Body className="modal-body modal-content" style={{height: "900px", width:"700px"}}>
           <img height="840" src={image} />
         </Modal.Body>
       </Modal>
