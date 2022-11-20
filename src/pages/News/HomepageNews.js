@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import news1 from "./news7.png";
 import news2 from "./news8.png";
 import news3 from "./news9.png";
@@ -30,11 +30,18 @@ const HomepageNews = () => {
     setShow(true);
     setImage(img);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="homepage-news-container">
       <div className="homepage-news-contents imgboxnews">
-        <h1 style={{ textAlign: "center", paddingBottom: "20px", color: "white" }}>News</h1>
+        <h1
+          style={{ textAlign: "center", paddingBottom: "20px", color: "white" }}
+        >
+          News
+        </h1>
         <Container>
           <Row>
             <Col>

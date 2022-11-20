@@ -36,10 +36,13 @@ const BenefitSection = () => {
               <div
                 className="benefit-elements"
                 onClick={() =>
-                  handleShow([
-                    "MULTI DIMENSION",
-                    "Mampu menghasilkan laporan keuangan yang lebih granular seperti by product, business segment, dan customer segment",
-                  ], MultiDimension)
+                  handleShow(
+                    [
+                      "MULTI DIMENSION",
+                      "Mampu menghasilkan laporan keuangan yang lebih granular seperti by product, business segment, dan customer segment",
+                    ],
+                    MultiDimension
+                  )
                 }
               >
                 <img height="140" src={MultiDimension} />
@@ -50,10 +53,13 @@ const BenefitSection = () => {
               <div
                 className="benefit-elements"
                 onClick={() =>
-                  handleShow([
-                    "AUTOMATION",
-                    "Mengurangi proses manual dan mempersingkat waktu dalam proses pembuatan laporan keuangan BRI",
-                  ], Automation)
+                  handleShow(
+                    [
+                      "AUTOMATION",
+                      "Mengurangi proses manual dan mempersingkat waktu dalam proses pembuatan laporan keuangan BRI",
+                    ],
+                    Automation
+                  )
                 }
               >
                 <img height="140" src={Automation} />
@@ -64,10 +70,13 @@ const BenefitSection = () => {
               <div
                 className="benefit-elements"
                 onClick={() =>
-                  handleShow([
-                    "ACCURACY",
-                    "Single source of financial information di BRI, meningkatkan keakuratan informasi dan transparansi data laporan keuangan",
-                  ], Accuracy)
+                  handleShow(
+                    [
+                      "ACCURACY",
+                      "Single source of financial information di BRI, meningkatkan keakuratan informasi dan transparansi data laporan keuangan",
+                    ],
+                    Accuracy
+                  )
                 }
               >
                 <img height="140" src={Accuracy} />
@@ -85,10 +94,13 @@ const BenefitSection = () => {
               <div
                 className="benefit-elements"
                 onClick={() =>
-                  handleShow([
-                    "TRACEABILITY",
-                    "Mampu melakukan penelusuran data transaksi ke source system, sehingga mampu menyajikan informasi yang detil untuk memproses laporan keuangan",
-                  ], Traceability)
+                  handleShow(
+                    [
+                      "TRACEABILITY",
+                      "Mampu melakukan penelusuran data transaksi ke source system, sehingga mampu menyajikan informasi yang detil untuk memproses laporan keuangan",
+                    ],
+                    Traceability
+                  )
                 }
               >
                 <img height="140" src={Traceability} />
@@ -99,10 +111,13 @@ const BenefitSection = () => {
               <div
                 className="benefit-elements"
                 onClick={() =>
-                  handleShow([
-                    "INTEGRATED",
-                    "Mampu terintegrasi secara mudah dengan berbagai source system operasional dan entitas dalam BRI Grup",
-                  ], Integrated)
+                  handleShow(
+                    [
+                      "INTEGRATED",
+                      "Mampu terintegrasi secara mudah dengan berbagai source system operasional dan entitas dalam BRI Grup",
+                    ],
+                    Integrated
+                  )
                 }
               >
                 <img height="140" src={Integrated} />
@@ -113,10 +128,13 @@ const BenefitSection = () => {
               <div
                 className="benefit-elements"
                 onClick={() =>
-                  handleShow([
-                    "COMPLIANCE",
-                    "Sesuai dengan standar atau ketentuan dari regulator, terkait proses akuntansi perbankan",
-                  ], Compliance)
+                  handleShow(
+                    [
+                      "COMPLIANCE",
+                      "Sesuai dengan standar atau ketentuan dari regulator, terkait proses akuntansi perbankan",
+                    ],
+                    Compliance
+                  )
                 }
               >
                 <img height="140" src={Compliance} />
@@ -126,7 +144,7 @@ const BenefitSection = () => {
           </Col>
         </Row>
       </div>
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} centered>
         <Modal.Body className="modal-body">
           <h3>
             <b>{data[0]}</b>
