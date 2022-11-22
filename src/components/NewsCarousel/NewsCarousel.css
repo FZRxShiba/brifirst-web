@@ -13,6 +13,5 @@
 
 .right.carousel-control,
 .left.carousel-control {
-  visibility: hidden;
+  filter: invert(100%);
 }
-
