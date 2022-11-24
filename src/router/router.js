@@ -14,26 +14,33 @@ import Berita from "../pages/Berita/Berita";
 import ReadMore from "../pages/ReadMore/ReadMore";
 import OrganizationChartDemo from "../pages/OrganizationChartDemo/OrganizationChartDemo";
 import HomepageNews from "../pages/News/HomepageNews";
+import React, { lazy, Suspense } from "react";
+
+const HPNews = lazy(() => import("../pages/News/HomepageNews"));
+const HNewsCarousel = lazy(() => import("../components/NewsCarousel/NewsCarousel"));
+const HHomepage = lazy(() => import("../pages/Homepage/Homepage"));
 
 const AllRoute = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/project" element={<Project />} />
-      <Route path="/modul" element={<Modul />} />
-      <Route path="/struktur-organisasi" element={<OrganizationChartDemo />} />
-      <Route path="/CardMenu" element={<CardMenu />} />
-      <Route path="/NewsCarousel" element={<NewsCarousel />} />
-      <Route path="/CustomFooter" element={<CustomFooter />} />
-      <Route path="/news" element={<HomepageNews />} />
-      <Route path="/news/news1" element={<News />} />
-      <Route path="/news/news2" element={<News2 />} />
-      <Route path="/news/news4" element={<News4 />} />
-      <Route path="/news/news5" element={<News5 />} />
-      <Route path="/news/news6" element={<News6 />} />
-      <Route path="/berita/berita" element={<Berita />} />
-      <Route path="/brifirst" element={<ReadMore/>} />
-    </Routes>
+    <Suspense fallback={<h1>Loading....</h1>}>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/modul" element={<Modul />} />
+        <Route path="/struktur-organisasi" element={<OrganizationChartDemo />} />
+        <Route path="/CardMenu" element={<CardMenu />} />
+        <Route path="/NewsCarousel" element={<NewsCarousel />} />
+        <Route path="/CustomFooter" element={<CustomFooter />} />
+        <Route path="/news" element={<HomepageNews />} />
+        <Route path="/news/news1" element={<News />} />
+        <Route path="/news/news2" element={<News2 />} />
+        <Route path="/news/news4" element={<News4 />} />
+        <Route path="/news/news5" element={<News5 />} />
+        <Route path="/news/news6" element={<News6 />} />
+        <Route path="/berita/berita" element={<Berita />} />
+        <Route path="/brifirst" element={<ReadMore />} />
+      </Routes>
+    </Suspense>
   );
 };
 
