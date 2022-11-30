@@ -23,7 +23,7 @@ const Project = () => {
       <Carousel autoPlay={true} interval={5000} controls={true} indicators={false}>
         <Carousel.Item>
           <div>
-            <p className="kontenpi" style={{ maxWidth: "1100px", height: "400px", paddingLeft: "200px", paddingTop: "-70px" }}>
+            <p className="kontenpi" style={{ maxWidth: "1100px", height: "400px", paddingLeft: "200px", paddingTop: "-1000px" }}>
               INISIASI PROJECT NEW FINANCE SYSTEM</p>
               <br></br>
               <br></br>
@@ -40,7 +40,7 @@ const Project = () => {
         </Carousel.Item>
         <Carousel.Item>
           <div>
-            <p className="kontenpi" style={{ maxWidth: "1100px", height: "400px", paddingLeft: "200px", paddingTop: "-70px" }}>
+            <p className="kontenpi" style={{ maxWidth: "1100px", height: "400px", paddingLeft: "200px", paddingTop: "-100px" }}>
               INISIASI PROYEK NEW FINANCE SYSTEM</p>
               <br></br>
               <br></br>
@@ -55,8 +55,7 @@ const Project = () => {
           </div>
         </Carousel.Item>
         <Carousel.Item>
-        <h1 className="roadmap1" style={{ maxWidth: "1100px", height: "300px", paddingLeft: "200px",}}>Roadmap Implementasi Sistem Keuangan BRIFIRST</h1>
-          <img src={roadmap} alt="roadmap" class="responsivebg"></img>
+          <img style={{paddingTop:"-350px"}} src={roadmap} alt="roadmap" class="responsivebg"></img>
         </Carousel.Item>
       </Carousel>
     </div>
