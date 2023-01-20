@@ -29,7 +29,7 @@ export default function App() {
               </h6>
               <p>PT Bank Rakyat Indonesia (Persero) Tbk.</p>
               <FiMapPin />
-              &nbsp; Gedung Parkir BRI Lantai 8
+              &nbsp; BRI Parking Building 8<sup>th</sup> floor
               <div className="dotremove">
                 <ul>
                   <li>
