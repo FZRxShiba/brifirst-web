@@ -1,0 +1,58 @@
+
+
+.bgnewsku {
+  background: url("./bgbrifirst.png");
+  height: 1000px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -100px;
+}
+
+
+
+.kontenpj {
+  color: white;
+  padding-left: -10px;
+  text-shadow: 2px 2px 4px rgb(70, 70, 70);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -300px;
+}
+
+.kontenpi {
+  color: white;
+  padding-left: -10px;
+  text-shadow: 2px 2px 4px rgb(70, 70, 70);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -150px;
+}
+
+.responsivebg {
+  padding-left: 130px;
+  padding-top: 30px;
+  width: 85%;
+  height: auto;
+}
+.roadmap1 {
+  color: white;
+  padding-left: -10px;
+  text-shadow: 2px 2px 4px rgb(70, 70, 70);
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -110px;
+  margin-bottom: -120px;
+}

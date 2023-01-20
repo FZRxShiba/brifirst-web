@@ -1,0 +1,18 @@
+.news-container {
+  margin-bottom: 200px;
+}
+
+.backgroundnews {
+  background-color: linear-gradient(50deg, #d9f4ff 1.98%, #bec9e7 100%);
+  padding: 50px;
+}
+
+.textnews {
+  font-size: 300px !important;
+}
+
+.right.carousel-control,
+.left.carousel-control {
+  visibility: hidden;
+}
+

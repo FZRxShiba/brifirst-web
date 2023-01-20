@@ -1,0 +1,32 @@
+.homepage-news-container {
+  background: url("./wpNews.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 200px;
+  margin-top: -100px;
+}
+
+.hpho:hover {
+}
+
+.homepage-news-contents {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 320px) {
+  #image-news-section {
+    width: 10%;
+    height: 30px;
+  }
+
+  .imgboxnews {
+    max-width: 400px;
+    min-width: 200px;
+  }
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}

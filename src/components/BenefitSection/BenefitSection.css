@@ -1,0 +1,26 @@
+.benefit-sect-container {
+  background: linear-gradient(90deg, #d9f4ff 10.98%, #bec9e7 100%);
+  padding: 50px;
+  margin-top: -120px;
+}
+
+.benefit-sect-title {
+  margin-top: 180px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 1px 3px 5px #000000;
+  margin-bottom: 50px;
+}
+
+.benefit-sect-body {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.benefit-elements:hover {
+  transform: scale(1.1);
+  transition: all 0.6s ease;
+}

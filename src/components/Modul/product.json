@@ -1,0 +1,17 @@
+[
+    {
+        "pk": 4,
+        "title": "Enterprise General Ledger",
+        "image": "./ModulImage/egl.png"
+    },
+    {
+        "pk": 5,
+        "title": "Financial Product Subledger",
+        "image": "./ModulImage/fps.png"
+    },
+    {
+        "pk": 6,
+        "title": "Profitability Analysis and Performance Management",
+        "image": "./ModulImage/papm.png"
+    }
+]

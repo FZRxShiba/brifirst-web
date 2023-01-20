@@ -1,0 +1,22 @@
+[
+    {
+        "pk": 0,
+        "title": "Fixed Asset Management & PSAK 73",
+        "image": "./ModulImage/fam.png"
+    },
+    {
+        "pk": 1,
+        "title": "Income & Expense Management",
+        "image": "./ModulImage/iem.png"
+    },
+    {
+        "pk": 2,
+        "title": "Financial Consolidation",
+        "image": "./ModulImage/fc.png"
+    },
+    {
+        "pk": 3,
+        "title": "Planning & Budgeting",
+        "image": "./ModulImage/pb.png"
+    }
+]

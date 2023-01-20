@@ -1,0 +1,42 @@
+.header-container {
+  background: url("./gedung.svg");
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -170px;
+}
+
+.contentImg {
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contentH,.header-carousel-title {
+  color: white;
+  text-shadow: 2px 2px 4px rgb(70, 70, 70);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contentBtn {
+  margin-top: 70px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentH:hover{
+  color: rgb(200, 200, 200)!important;
+}

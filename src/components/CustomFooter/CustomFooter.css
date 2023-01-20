@@ -1,0 +1,37 @@
+.footer {
+  background: linear-gradient(90deg, #8FE1FF 10.98%, #3E5EB3 100%);
+}
+
+.footBold {
+  font-size: 15px;
+  color: #fff;
+}
+
+.telp {
+  font-size: 15px;
+  color: #030101;
+}
+
+.dotremove ul {
+  list-style-type: none;
+}
+
+.dotremovecol ul {
+  list-style-type: none;
+  margin-left: -50px;
+}
+
+.dotremove {
+margin-left: -8px;
+}
+
+
+.footermargin {
+  margin-left: 355px;
+}
+
+.scroll-to-top {
+  border-radius: 50%!important;
+  width: 60px!important;
+  height: 60px!important;
+}
