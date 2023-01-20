@@ -30,3 +30,8 @@
 .modal-backdrop {
   background-color: transparent;
 }
+
+.modal-scrollbar-measure {
+  overflow: hidden !Important;
+  overflow-y: hidden;
+padding-right: 100px; }

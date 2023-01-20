@@ -77,7 +77,7 @@ const HomepageNews = () => {
             </Col>
           </Row>
         </Container>
-        <Modal show={show} onHide={handleClose} centered>
+        <Modal show={show} onHide={handleClose} centered style={{textAlign:"center", marginLeft:"-50px", overflowY:"hidden !important auto"}}>
         <Modal.Body className="modal-body modal-content" style={{height: "920px", width:"700px"}}>
           <img height="840" src={image} />
         </Modal.Body>
